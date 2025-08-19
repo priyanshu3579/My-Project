@@ -783,10 +783,11 @@ footer {
 }
 
 .contact-container h2 {
+    margin-top: 20px;
   text-align: center;
   font-size: 2rem;
   margin-bottom: 10px;
-  color: #333;
+  color: #FF9B00;
 }
 
 .contact-container p {
@@ -844,7 +845,7 @@ footer {
 
 .contact-info h3 {
   margin-bottom: 15px;
-  color: #333;
+  color: #FF9B00;
 }
 
 .contact-info p {
