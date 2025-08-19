@@ -1,67 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us - Travel Website</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
-  <style>
-    body {
-      font-family: "Poppins", sans-serif;
-      padding: 20px;
-      line-height: 1.6;
-    }
-    h1 {
-      margin-bottom: 10px;
-    }
-    .section {
-      margin-bottom: 20px;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    ul li {
-      margin-bottom: 8px;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="categories.js"></script>
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body>
-  <h1>Contact Us</h1>
-  <p>Your journey begins with a single message — we’re here to help you explore the world 🌍✨</p>
+<body class="contact-page">
 
-  <div class="section">
-    <h3>Phone</h3>
-    <ul>
-      <li>+91 98765 43210</li>
-    </ul>
-  </div>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="Image/logo.png" alt="Logo" />
+        <span>Kapish Holidayss</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Tour Packages</a></li>
+        <li class="dropdown">
+          <a href="#">Categories &#9662;</a>
+          <ul class="dropdown-menu">
+            <li><a href="categories.html">Adventure</a></li>
+            <li><a href="Beaches.html">Beaches</a></li>
+            <li><a href="family.html">Family</a></li>
+            <li><a href="honeymoon.html">Honeymoon</a></li>
+            <li><a href="nature.html">Nature</a></li>
+            <li><a href="religious.html">Religious</a></li>
+            <li><a href="weekend.html">Weekend</a></li>
+            <li><a href="wildlife.html">Wildlife</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class="search-container">
+        <input type="text" placeholder="Search..." />
+        <button>🔍</button>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
 
-  <div class="section">
-    <h3>Email</h3>
-    <ul>
-      <li>support@travelwebsite.com</li>
-    </ul>
-  </div>
+  <section class="contact-container">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Fill out the form or connect with us directly.</p>
 
-  <div class="section">
-    <h3>Office Address</h3>
-    <ul>
-      <li>123, Tourist Avenue, New Delhi, India</li>
-    </ul>
-  </div>
+    <div class="contact-wrapper">
+      
+      <!-- Left: Form -->
+      <div class="contact-form">
+        <form id="contactForm">
+          <input autocomplete="off" type="text" id="name" placeholder="Your Name" required>
+          <input autocomplete="off" type="email" id="email" placeholder="Your Email" required>
+          <textarea id="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send via WhatsApp</button>
+        </form>
+      </div>
 
-  <div class="section">
-    <h3>Follow Us</h3>
-    <ul>
-      <li><a href="#">Instagram</a></li>
-      <li><a href="#">Facebook</a></li>
-      <li><a href="#">YouTube</a></li>
-      <li><a href="#">WhatsApp</a></li>
-    </ul>
-  </div>
+      <!-- Right: Info -->
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p>Phone : +91 9953666689</p>
+        <p>Email : kapishholidayss@gmail.com</p>
+        <p>Address : C-403 ,4th Floor ,Dakshinpuri,N.D-62 </p>
+
+        <div class="social-links">
+          <a href="https://www.facebook.com/KapishHolidays" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          
+          <a
+            href="https://www.instagram.com/arvindyadav9192024?igsh=MTRvaHdtcmlmNXR6cw=="
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+             <a
+            href="https://wa.me/919953666689?text=Hello%20Kapish%20Holidayss!"
+            target="_blank"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+
+        </div>
+
+        <!-- Map -->
+        <div class="map">
+          <iframe 
+  src="https://www.google.com/maps?q=C-403%2C%204th%20Floor%2C%20Dakshinpuri%2C%20N.D-62&z=17&output=embed" 
+  width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+</iframe>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
 </body>
 </html>

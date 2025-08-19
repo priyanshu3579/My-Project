@@ -130,3 +130,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+// WhatsApp Redirect
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contactForm");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    const phoneNumber = "919953666689"; // 
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=
+    Name: ${encodeURIComponent(name)}
+    %0AEmail: ${encodeURIComponent(email)}
+    %0AMessage: ${encodeURIComponent(message)}`;
+
+    window.open(whatsappURL, "_blank");
+  });
+});
