@@ -39,7 +39,9 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     color: #FF9B00;
+    font-family: "Playfair Display", serif;
 }
+
 
 .nav-links {
     display: flex;
