@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kapish Holidayss</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <nav class="navbar">
+      <div class="logo">
+        <img src="Image/logo.png" alt="Logo" />
+        <span>Kapish Holidayss</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Tour Packages</a></li>
+        <li class="dropdown">
+          <a href="#">Categories &#9662;</a>
+          <ul class="dropdown-menu">
+            <li><a href="categories.html">Adventure</a></li>
+            <li><a href="Beaches.html">Beaches</a></li>
+            <li><a href="family.html">Family</a></li>
+            <li><a href="honeymoon.html">Honeymoon</a></li>
+            <li><a href="nature.html">Nature</a></li>
+            <li><a href="religious.html">Religious</a></li>
+            <li><a href="weekend.html">Weekend</a></li>
+            <li><a href="wildlife.html">Wildlife</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact Us</a></li>
+       
+      </ul>
+      <div class="search-container">
+        <input type="text" placeholder="Search..." />
+        <button>🔍</button>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <div class="slider-container">
+      <div class="slider">
+        <img
+          src="Image/neil island ( andaman).jpg"
+          class="slide active"
+          alt="Andaman"
+        />
+        <img src="Image/kerala.webp" class="slide" alt="Shimla" />
+        <img
+          src="Image/manali ( himachal).jpeg.jpg"
+          class="slide"
+          alt="Srinagar"
+        />
+        <img
+          src="https://c4.wallpaperflare.com/wallpaper/587/946/340/india-asia-forest-river-wallpaper-preview.jpg"
+          class="slide"
+          alt="Kerala"
+        />
+      </div>
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+      <div class="dots-container"></div>
+      <!-- dots indicator -->
+    </div>
+
+    <section class="tour-packages">
+      <h2>Tour Packages</h2>
+      <div class="packages-container">
+        <div class="package-card">
+          <img src="Image/neil island ( andaman).jpg" alt="Andaman" />
+          <h3>Andaman Islands</h3>
+          <p>
+            Discover pristine beaches, turquoise waters, exotic marine life, and
+            thrilling water sports in the untouched beauty of the Andaman
+            Islands.
+          </p>
+          <button>Explore</button>
+        </div>
+
+        <div class="package-card">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1697730277839-440df1a4415f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Kashmir"
+          />
+          <h3>Kashmir</h3>
+          <p>
+            Experience the breathtaking valleys, snow-capped mountains, and
+            serene lakes of Kashmir, the true ‘Paradise on Earth’.
+          </p>
+          <button>Explore</button>
+        </div>
+        <div class="package-card">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1697729438401-fcb4ff66d9a8?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Kerala"
+          />
+          <h3>Kerala</h3>
+          <p>
+            Enjoy tranquil backwaters, lush tea gardens, spice plantations, and
+            rich culture in ‘God’s Own Country’ – Kerala.
+          </p>
+          <button>Explore</button>
+        </div>
+
+        <div class="package-card">
+          <img
+            src="https://static2.tripoto.com/media/travel-story/dirang_valley.jpg"
+            alt="North East"
+          />
+          <h3>North East</h3>
+          <p>
+            Discover the hidden gems of the North East with its scenic
+            mountains, waterfalls, monasteries, and vibrant tribal culture.
+          </p>
+          <button>Explore</button>
+        </div>
+        <div class="package-card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV4hP9OdgW6HKNuqfGfCP7XqsQ9m3FhulaEg&s"
+            alt="Tamil Nadu"
+          />
+          <h3>Tamil Nadu</h3>
+          <p>
+            Explore the rich temples, ancient architecture, hill stations, and
+            cultural heritage of Tamil Nadu.
+          </p>
+          <button>Explore</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories">
+      <h2>Travel Categories</h2>
+      <div class="categories-container">
+        <div class="category-card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHPzUY883stznaoL9blgZG2yObSvh2GkAagw&s"
+            alt="Adventure"
+          />
+          <h3>Adventure</h3>
+          <p>Feel the thrill, embrace the adrenaline, and explore the unknown.</p><br>
+          <a href="categories.html"><button>Explore</button></a>
+        </div>
+        <div class="category-card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG_0SrSU0xTSip_yKcpsXCfcTE28OaD4Dkpw&s"
+            alt="Beaches"
+          />
+          <h3>Beaches</h3>
+          <p>Feel the thrill, embrace the adrenaline, and explore the unknown.</p><br>
+          <a href="Beaches.html"><button>Explore</button></a>
+        </div>
+        <div class="category-card">
+          <img
+            src="https://media.gettyimages.com/id/1184292326/video/palm-tree-luxuty-beach-travel-holiday.jpg?s=640x640&k=20&c=HEq_v0dfejkq6w30kpn1ipAkSgoubHm4A8-ioohOiww="
+            alt="Family"
+          />
+          <h3>Family</h3>
+          <p>Feel the thrill, embrace the adrenaline, and explore the unknown.</p><br>
+          <a href="family.html"><button>Explore</button></a>
+        </div>
+        <div class="category-card">
+          <img
+            src="https://t4.ftcdn.net/jpg/02/75/23/61/360_F_275236189_rNxaGcQBetPVIclxs0k7mDCRvXnQgueO.jpg"
+            alt="Honeymoon"
+          />
+          <h3>Honeymoon</h3>
+          <p>Feel the thrill, embrace the adrenaline, and explore the unknown.</p><br>
+          <a href="honeymoon.html"><button>Explore</button></a>
+        </div>
+        <div class="category-card">
+          <img
+            src="https://static.vecteezy.com/system/resources/thumbnails/049/855/128/small/nature-background-high-resolution-wallpaper-for-a-serene-and-stunning-view-free-photo.jpg"
+            alt="Nature"
+          />
+          <h3>Nature</h3>
+          <p>Feel the thrill, embrace the adrenaline, and explore the unknown.</p><br>
+          <a href="nature.html"><button>Explore</button></a>
+        </div>
+        <div class="category-card">
+          <img
+            src="https://images.unsplash.com/photo-1719377678428-d9bcec6976f3?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dmFpc2hubyUyMGRldml8ZW58MHx8MHx8fDA%3D"
+            alt="Religious"
+          />
+          <h3>Religious</h3>
+          <p>Feel the thrill, embrace the adrenaline, and explore the unknown.</p><br>
+          <a href="religious.html"><button>Explore</button></a>
+        </div>
+        <div class="category-card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWCrQZCixmgNzlZCBHythBFozj2pm4VVG23w&s"
+            alt="Weekend"
+          />
+          <h3>Weekend</h3>
+          <p>Feel the thrill, embrace the adrenaline, and explore the unknown.</p><br>
+          <a href="weekend.html"><button>Explore</button></a>
+        </div>
+        <div class="category-card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWV4vFTePqMMj1A0pxy0TudUkUtEv4JerX6g&s"
+            alt="Wildlife"
+          />
+          <h3>Wildlife</h3>
+          <p>Feel the thrill, embrace the adrenaline, and explore the unknown.</p><br>
+          <a href="wildlife.html"><button>Explore</button></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-choose">
+      <h2>Why Choose Travel Outlet India?</h2>
+      <div class="why-container">
+        <div class="why-card">
+          <img
+            src="https://img.icons8.com/fluency/64/checkmark.png"
+            alt="Reliable"
+          />
+          <h3>Reliable Service</h3>
+          <p>
+            We provide trusted and hassle-free booking services for all
+            destinations.
+          </p>
+        </div>
+        <div class="why-card">
+          <img
+            src="https://img.icons8.com/fluency/64/airplane-take-off.png"
+            alt="Best Packages"
+          />
+          <h3>Best Packages</h3>
+          <p>Exclusive deals and customized packages tailored to your needs.</p>
+        </div>
+        <div class="why-card">
+          <img
+            src="https://img.icons8.com/fluency/64/customer-support.png"
+            alt="24/7 Support"
+          />
+          <h3>24/7 Support</h3>
+          <p>
+            Our team is available round the clock to assist you at every step.
+          </p>
+        </div>
+        <div class="why-card">
+          <img
+            src="https://img.icons8.com/fluency/64/money-bag.png"
+            alt="Affordable"
+          />
+          <h3>Affordable Prices</h3>
+          <p>Competitive pricing with no hidden charges for all tours.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section contact">
+          <h3>Contact Us</h3>
+          <p>Email: info@traveloutletindia.com</p>
+          <p>Phone: +91 9876543210</p>
+          <p>Address: 123, MG Road, New Delhi, India</p>
+        </div>
+        <div class="footer-section links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tour Packages</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Feedback</a></li>
+          </ul>
+        </div>
+        <div class="footer-section social">
+          <h3>Follow Us</h3>
+          <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Travel Outlet India. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <button id="scrollTopBtn">↑</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
