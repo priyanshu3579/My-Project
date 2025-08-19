@@ -1,0 +1,768 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+
+  background: linear-gradient(135deg, #f8f9ff, #e6f0ff);
+
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #ffffff98;
+      backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.logo span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FF9B00;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-links li {
+    position: relative; /* for dropdown positioning */
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #FF9B00;
+}
+
+/* Dropdown Styles */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    list-style: none;
+    padding: 10px 0;
+    min-width: 150px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    padding: 8px 20px;
+}
+
+.dropdown-menu li a {
+    color: #333;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+
+.dropdown-menu li a:hover {
+    color: #FF9B00;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #FF9B00;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.search-container input {
+    border: none;
+    padding: 5px 10px;
+    outline: none;
+    width: 150px;
+}
+
+.search-container button {
+    border: none;
+    background: #FF9B00;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-container button:hover {
+    background: #e08800;
+}
+
+/* Hamburger menu for mobile */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #FF9B00;
+    border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .nav-links, .search-container {
+        display: none;
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        width: 200px;
+    }
+
+    .nav-links.active, .search-container.active {
+        display: flex;
+    }
+
+    /* Dropdown toggle on mobile */
+    .dropdown-menu {
+        position: relative;
+        top: 0;
+        left: 0;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: none; /* hover disabled on mobile */
+    }
+}
+
+
+
+.slider-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    display: none;
+    height: 600px;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+}
+
+.slider img.active {
+    display: block;
+}
+
+/* Next & Prev Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.prev:hover, .next:hover {
+    background-color: transparent;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+
+/* Dots indicator */
+.dots-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dot.active {
+    background: #FF9B00;
+}
+
+
+.tour-packages {
+    padding: 60px 20px;
+
+    text-align: center;
+}
+
+.tour-packages h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #FF9B00;
+}
+
+.packages-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.package-card {
+    
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.package-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.package-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.package-card h3 {
+    margin: 15px 0 10px;
+    color: #FF9B00;
+}
+
+.package-card p {
+    padding: 0 15px 15px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.package-card button {
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: #FF9B00;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.package-card button:hover {
+    background: #e08800;
+}
+
+
+.categories {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #FF9B00;
+}
+
+.categories-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.category-card {
+    
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.category-card p {
+    padding: 0 15px 15px;
+    font-size: 0.95rem;
+    color: #555;
+}
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.category-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.category-card h3 {
+    margin: 15px 0 10px;
+    color: #FF9B00;
+}
+
+.category-card button {
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: #FF9B00;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.category-card button:hover {
+    background: #e08800;
+}
+
+
+.why-choose {
+    padding: 60px 20px;
+
+    text-align: center;
+}
+
+.why-choose h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #FF9B00;
+}
+
+.why-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.why-card {
+
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.why-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.why-card img {
+    width: 64px;
+    margin-bottom: 15px;
+}
+
+.why-card h3 {
+    color: #FF9B00;
+    margin-bottom: 10px;
+}
+
+.why-card p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/*footer  */
+
+footer {
+   background: rgba(30,30,30,0.95);
+    backdrop-filter: blur(10px);
+    color: #ccc;
+    padding: 40px 20px 20px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1 1 250px;
+}
+
+.footer-section h3 {
+    color: #ffb84d;
+    margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section li, .footer-section a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 8px;
+    display: block;
+    font-size: 0.95rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section a:hover {
+    color: #FF9B00;
+}
+
+.footer-section.social a {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.footer-section.social a:hover {
+    color: #FF9B00;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 15px;
+    font-size: 0.9rem;
+     border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999; /* ensure top layer */
+    background-color: transparent;
+    color: orange;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 33px;
+    display: none; /* initially hidden */
+   
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#scrollTopBtn:hover {
+    transform: scale(1.7);
+}
+
+
+
+/* secound page   */
+/* Hero Section */
+.hero {
+  height: 92vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#advantureBg{
+      background: url('https://cdn.pixabay.com/photo/2020/04/22/12/06/adventure-5077760_1280.jpg') no-repeat center center/cover;
+
+}
+
+#beachesBg{
+      background: url('https://media.gettyimages.com/id/1184292326/video/palm-tree-luxuty-beach-travel-holiday.jpg?s=640x640&k=20&c=HEq_v0dfejkq6w30kpn1ipAkSgoubHm4A8-ioohOiww=') no-repeat center center/cover;
+
+}
+
+#familyBg{
+    background: url('https://thumbs.dreamstime.com/b/happy-family-having-fun-enjoying-summer-time-sea-127999952.jpg') no-repeat center center/cover;
+}
+
+#honeymoonBg{
+    background: url('https://thumbs.dreamstime.com/b/honeymoon-couple-having-private-romantic-dinner-tropical-beach-115317160.jpg') no-repeat center center/cover;
+}
+
+#natureBg{
+    background: url('https://wallpapercrafter.com/desktop/11640-forest-lake-man-tourist-trees-nature-4k.jpg') no-repeat center center/cover;
+}
+
+#religiousBg{
+    background: url('https://images.unsplash.com/photo-1719377678428-d9bcec6976f3?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dmFpc2hubyUyMGRldml8ZW58MHx8MHx8fDA%3D') no-repeat center center/cover;
+}
+
+#weekendBg{
+    background: url('https://media.gettyimages.com/id/1472299283/video/father-and-daughter-running-on-a-tropical-beach-surrounded-by-hills.jpg?s=640x640&k=20&c=2NTPFvxQNJTs97qVyyZXwXGrw0Ksp6FL_xrHcmYmBrI=') no-repeat center center/cover;
+}
+
+#wildlifeBg{
+    background: url('https://images.unsplash.com/photo-1525869916826-972885c91c1e?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8N3wxMDYwNzA4MXx8ZW58MHx8fHx8') no-repeat center center/cover;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5); /* Dark overlay */
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.explore-btn {
+  background: #ff6600;
+  border: none;
+  padding: 12px 25px;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.explore-btn:hover {
+  background: #e05500;
+}
+
+.main-content {
+  display: none; /* Hidden initially */
+  padding: 50px;
+  text-align: center;
+
+}
+
+
+.destination-card-horizontal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    min-height: 200px;   /* ✅ ek fixed height */
+  transition: all 0.3s ease;
+}
+
+.destination-card-horizontal img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-content-horizontal {
+  padding: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-content-horizontal h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.card-content-horizontal p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.card-content-horizontal .explore-btn {
+  padding: 10px 20px;
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: fit-content;
+
+  /* Center the button */
+  align-self: center; /* ya margin: 0 auto; */
+}
+
+.card-content-horizontal .explore-btn:hover {
+  background: #e05500;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .destination-card-horizontal {
+    flex-direction: column;
+  }
+  
+  .destination-card-horizontal img,
+  .card-content-horizontal {
+    width: 100%;
+  }
+  
+  .card-content-horizontal h3 {
+    font-size: 1.5rem;
+  }
+}
+
+.pDiscription{
+   font-weight: bolder;
+}
+
+
+/* Itinerary Box */
+.itinerary-box {
+  background: #fff;
+  padding: 25px 30px;
+  margin: 30px auto;
+  border-radius: 10px;
+  max-width: 900px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+/* Back Button */
+.itinerary-box .back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.itinerary-box .back-btn:hover {
+  background: #e05500;
+  transform: translateY(-2px);
+}
+
+/* Headings & Paragraphs inside itinerary */
+.itinerary-box h3 {
+  margin-top: 50px; /* space for back button */
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.itinerary-box p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+/* Optional: small animation for appearing content */
+.itinerary-box p, .itinerary-box h3 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.5s forwards;
+}
+
+.itinerary-box p:nth-child(2) { animation-delay: 0.2s; }
+.itinerary-box p:nth-child(3) { animation-delay: 0.3s; }
+.itinerary-box p:nth-child(4) { animation-delay: 0.4s; }
+.itinerary-box p:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .itinerary-box {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .itinerary-box h3 {
+    font-size: 1.5rem;
+  }
+
+  .itinerary-box .back-btn {
+    top: 15px;
+    left: 15px;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+}
