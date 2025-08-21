@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    
     <nav class="navbar">
       <div class="logo">
         <img src="Image/logo.png" alt="Logo" />
@@ -25,7 +26,7 @@
       </div>
       <ul class="nav-links">
         <li><a href="#">Home</a></li>
-        <li><a href="#">Tour Packages</a></li>
+        <li><a href="#tour-packages">Tour Packages</a></li>
         <li class="dropdown">
           <a href="#">Categories &#9662;</a>
           <ul class="dropdown-menu">
@@ -77,7 +78,7 @@
       <!-- dots indicator -->
     </div>
 
-    <section class="tour-packages">
+    <section id="tour-packages" class="tour-packages">
       <h2>Tour Packages</h2>
       <div class="packages-container">
         <div class="package-card">
@@ -88,7 +89,7 @@
             thrilling water sports in the untouched beauty of the Andaman
             Islands.
           </p>
-          <button>Explore</button>
+         <button>Andaman</button>
         </div>
 
         <div class="package-card">
@@ -139,7 +140,7 @@
             Discover the stunning beaches, vibrant nightlife, Portuguese
             heritage, and tropical charm of Goa.
           </p>
-          <button>Explore</button>
+          <button>Goa</button>
         </div>
 
         <div class="package-card">
@@ -429,5 +430,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
+    <script>
+  // sab buttons select karo
+  document.querySelectorAll(".package-card button").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      let destination = btn.parentElement.querySelector("h3").textContent.trim();
+      
+      // localStorage me save karo
+      localStorage.setItem("selectedDestination", destination);
+      
+      // packages.html pe redirect
+      window.location.href = "packages.html";
+    });
+  });
+</script>
+
   </body>
 </html>

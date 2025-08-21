@@ -165,4 +165,3 @@ if(currentPage === "categories.html"){
 
 
 
-
