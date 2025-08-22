@@ -18,20 +18,19 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    
     <nav class="navbar">
       <div class="logo">
         <img src="Image/logo.png" alt="Logo" />
-          <div class="logo-text">
-    <span>Kapish Holidayss</span>
-    <p class="tagline">We are the best</p>
-  </div>
+        <div class="logo-text">
+          <span>Kapish Holidayss</span>
+          <p class="tagline">We are the best</p>
+        </div>
       </div>
       <ul class="nav-links">
         <li><a href="#">Home</a></li>
         <li><a href="#tour-packages">Tour Packages</a></li>
         <li class="dropdown">
-          <a href="#">Categories &#9662;</a>
+          <a href="#categories-packages">Categories &#9662;</a>
           <ul class="dropdown-menu">
             <li><a href="categories.html">Adventure</a></li>
             <li><a href="Beaches.html">Beaches</a></li>
@@ -47,7 +46,7 @@
       </ul>
       <div class="search-container">
         <input type="text" placeholder="Search..." />
-        <button>🔍</button>
+        <button><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
       </div>
       <div class="hamburger">
         <span></span>
@@ -63,7 +62,11 @@
           class="slide active"
           alt="Andaman"
         />
-        <img src="https://media.istockphoto.com/id/2149112736/photo/wat-arun-temple-at-sunset-bangkok-in-thailand.jpg?s=612x612&w=0&k=20&c=1JqYAueTVDWfnj8iwCRlS_VIp-3YBeDp6Wp-Pq19qVk=" class="slide" alt="Shimla" />
+        <img
+          src="https://media.istockphoto.com/id/2149112736/photo/wat-arun-temple-at-sunset-bangkok-in-thailand.jpg?s=612x612&w=0&k=20&c=1JqYAueTVDWfnj8iwCRlS_VIp-3YBeDp6Wp-Pq19qVk="
+          class="slide"
+          alt="Shimla"
+        />
         <img
           src="https://media.istockphoto.com/id/1371289822/photo/himalayan-village-town-of-kalpa-with-kailash-mountain-snow-peaks-at-himachal-pradesh-india.jpg?s=612x612&w=0&k=20&c=ibz1ktqV34YlHk0FeSyBcoykG2IVViXNUxU2NLCGsg8="
           class="slide"
@@ -92,7 +95,7 @@
             thrilling water sports in the untouched beauty of the Andaman
             Islands.
           </p>
-         <button>Andaman</button>
+          <button>Andaman</button>
         </div>
 
         <div class="package-card">
@@ -239,7 +242,7 @@
       </div>
     </section>
 
-    <section class="categories">
+    <section id="categories-packages" class="categories">
       <h2>Travel Categories</h2>
       <div class="categories-container">
         <div class="category-card">
@@ -434,19 +437,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
     <script>
-  // sab buttons select karo
-  document.querySelectorAll(".package-card button").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      let destination = btn.parentElement.querySelector("h3").textContent.trim();
-      
-      // localStorage me save karo
-      localStorage.setItem("selectedDestination", destination);
-      
-      // packages.html pe redirect
-      window.location.href = "packages.html";
-    });
-  });
-</script>
+      // sab buttons select karo
+      document.querySelectorAll(".package-card button").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          let destination = btn.parentElement
+            .querySelector("h3")
+            .textContent.trim();
 
+          // localStorage me save karo
+          localStorage.setItem("selectedDestination", destination);
+
+          // packages.html pe redirect
+          window.location.href = "packages.html";
+        });
+      });
+    </script>
   </body>
 </html>

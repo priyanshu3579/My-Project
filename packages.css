@@ -324,3 +324,67 @@ html {
 .data-display-box button:nth-child(2):hover {
   background: #128C7E;
 }
+
+
+footer {
+   background: rgba(30,30,30,0.95);
+    backdrop-filter: blur(10px);
+    color: #ccc;
+    padding: 40px 20px 20px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1 1 250px;
+}
+
+.footer-section h3 {
+    color: #ffb84d;
+    margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section li, .footer-section a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 8px;
+    display: block;
+    font-size: 0.95rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section a:hover {
+    color: #FF9B00;
+}
+
+.footer-section.social a {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.footer-section.social a:hover {
+    color: #FF9B00;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 15px;
+    font-size: 0.9rem;
+     border-top: 1px solid rgba(255,255,255,0.1);
+}
