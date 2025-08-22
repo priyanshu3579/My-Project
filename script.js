@@ -163,5 +163,3 @@ if(currentPage === "categories.html"){
     });
 }
 
-
-
