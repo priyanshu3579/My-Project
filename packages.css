@@ -25,6 +25,18 @@ html {
     top: 0;
     z-index: 100;
 }
+.logo-text {
+    display: flex;
+    flex-direction: column; /* span ke niche tagline aayegi */
+    line-height: 1.2;
+}
+.logo-text .tagline {
+  margin-top: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #FF9B00;
+    font-family: "Poppins", sans-serif;
+}
 
 .logo {
     display: flex;
@@ -177,7 +189,7 @@ html {
         display: none; /* hover disabled on mobile */
     }
 }
-
+    
 
 
 .cards-container {

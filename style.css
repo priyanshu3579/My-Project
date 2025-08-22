@@ -33,6 +33,11 @@ html {
     align-items: center;
     gap: 10px;
 }
+.logo-text {
+    display: flex;
+    flex-direction: column; /* span ke niche tagline aayegi */
+    line-height: 1.2;
+}
 
 .logo img {
     width: 50px;
@@ -45,6 +50,13 @@ html {
     font-family: "Poppins", sans-serif;
 }
 
+.logo-text .tagline {
+  margin-top: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #FF9B00;
+    font-family: "Poppins", sans-serif;
+}
 
 .nav-links {
     display: flex;
@@ -702,7 +714,7 @@ footer {
 .itinerary-box .back-btn {
   position: absolute;
   top: 20px;
-  left: 20px;
+  left: 50px;
   background: #ff6600;
   color: #fff;
   border: none;
@@ -891,3 +903,17 @@ footer {
 }
 
 
+.query-btn {
+  background-color: #25D366; /* WhatsApp green */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.query-btn:hover {
+  background-color: #1ebe5c;
+}

@@ -2157,3 +2157,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+function startNavbarAnimation() {
+    const tl = gsap.timeline({ defaults: { ease: "power2.out" } });
+
+    tl.from(".navbar", { duration: 0.5, y: -100, opacity: 0 })
+      .from(".logo img", { duration: 1, rotation: 360 })
+      .from(".logo span", { duration: 0.5, opacity: 0, x: -20 }, "-=0.5")
+      .from(".nav-links li", { duration: 0.4, opacity: 0, y: -20, stagger: 0.2 }, "-=0.3")
+      .from(".search-container", { duration: 0.5, opacity: 0, x: 20 })
+      .from(".slider-container", { duration: 1, opacity: 0, y: 50 });
+}
+
+// ===== Call navbar animation on page load =====
+document.addEventListener("DOMContentLoaded", () => {
+    startNavbarAnimation();
+});
