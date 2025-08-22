@@ -287,3 +287,28 @@ html {
         justify-content: center;
     }
 }
+
+
+.data-display-box button {
+  background: #FF5C00;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.data-display-box button:hover {
+  background: #e04f00;
+}
+
+/* WhatsApp button specific style */
+.data-display-box button:nth-child(2) {
+  background: #25D366;
+}
+
+.data-display-box button:nth-child(2):hover {
+  background: #128C7E;
+}
