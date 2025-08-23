@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-
     <nav class="navbar">
       <div class="logo">
         <img src="Image/logo.png" alt="Logo" />
@@ -45,11 +44,23 @@
         </li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
-      <div class="search-container">
-        <input type="text" placeholder="Search..." />
-        <button><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
-        <ul id="suggestions"></ul>
-      </div>
+
+<div class="search-container">
+  <input
+    autocomplete="off"
+    type="text"
+    placeholder="Search..."
+    id="searchInput"
+    class="search-input"
+  />
+  <!-- Search icon button -->
+  <button class="search-btn" id="searchToggle">
+    <i class="fa-solid fa-magnifying-glass" style="color: #ffffff"></i>
+  </button>
+</div>
+
+
+
       <div class="hamburger">
         <span></span>
         <span></span>
@@ -59,26 +70,10 @@
 
     <div class="slider-container">
       <div class="slider">
-        <img
-          src="Image/andaman.jpg"
-          class="slide active"
-          alt="Andaman"
-        />
-        <img
-          src="Image/Kashmir.jpg"
-          class="slide"
-          alt="Kashmir"
-        />
-        <img
-          src="Image/goa.jpg"
-          class="slide"
-          alt="Goa"
-        />
-        <img
-          src="Image/Kerala.jpg"
-          class="slide"
-          alt="Kerala"
-        />
+        <img src="Image/andaman.jpg" class="slide active" alt="Andaman" />
+        <img src="Image/Kashmir.jpg" class="slide" alt="Kashmir" />
+        <img src="Image/goa.jpg" class="slide" alt="Goa" />
+        <img src="Image/Kerala.jpg" class="slide" alt="Kerala" />
       </div>
       <button class="prev">&#10094;</button>
       <button class="next">&#10095;</button>
@@ -101,10 +96,7 @@
         </div>
 
         <div class="package-card">
-          <img
-            src="Image/kashmirP.jpg"
-            alt="Kashmir"
-          />
+          <img src="Image/kashmirP.jpg" alt="Kashmir" />
           <h3>Kashmir</h3>
           <p>
             Experience the breathtaking valleys, snow-capped mountains, and
@@ -113,10 +105,7 @@
           <button>Explore</button>
         </div>
         <div class="package-card">
-          <img
-            src="Image/keralaP.jpg"
-            alt="Kerala"
-          />
+          <img src="Image/keralaP.jpg" alt="Kerala" />
           <h3>Kerala</h3>
           <p>
             Enjoy tranquil backwaters, lush tea gardens, spice plantations, and
@@ -126,10 +115,7 @@
         </div>
 
         <div class="package-card">
-          <img
-            src="Image/northeastP.jpg"
-            alt="North East"
-          />
+          <img src="Image/northeastP.jpg" alt="North East" />
           <h3>North East</h3>
           <p>
             Discover the hidden gems of the North East with its scenic
@@ -139,10 +125,7 @@
         </div>
 
         <div class="package-card">
-          <img
-            src="Image/goaP.jpg"
-            alt="Goa"
-          />
+          <img src="Image/goaP.jpg" alt="Goa" />
           <h3>Goa</h3>
           <p>
             Discover the stunning beaches, vibrant nightlife, Portuguese
@@ -152,10 +135,7 @@
         </div>
 
         <div class="package-card">
-          <img
-            src="Image/gujratP.jpg"
-            alt="Gujarat"
-          />
+          <img src="Image/gujratP.jpg" alt="Gujarat" />
           <h3>Gujarat</h3>
           <p>
             Experience the majestic stepwells, colorful festivals, vibrant
@@ -165,10 +145,7 @@
         </div>
 
         <div class="package-card">
-          <img
-            src="Image/apP.jpg"
-            alt="Himachal"
-          />
+          <img src="Image/apP.jpg" alt="Himachal" />
           <h3>Himachal</h3>
           <p>
             Explore the snow-capped mountains, serene valleys, adventure trails,
@@ -178,10 +155,7 @@
         </div>
 
         <div class="package-card">
-          <img
-            src="Image/mpP.jpg"
-            alt="Madhya Pradesh"
-          />
+          <img src="Image/mpP.jpg" alt="Madhya Pradesh" />
           <h3>Madhya Pradesh</h3>
           <p>
             Discover the ancient temples, dense wildlife sanctuaries, historic
@@ -191,10 +165,7 @@
         </div>
 
         <div class="package-card">
-          <img
-            src="Image/maharashtraP.jpg"
-            alt="Maharashtra"
-          />
+          <img src="Image/maharashtraP.jpg" alt="Maharashtra" />
           <h3>Maharashtra</h3>
           <p>
             Explore the bustling cities, historic forts, scenic coastal routes,
@@ -204,10 +175,7 @@
         </div>
 
         <div class="package-card">
-          <img
-            src="Image/rajsthanP.jpg"
-            alt="Rajasthan"
-          />
+          <img src="Image/rajsthanP.jpg" alt="Rajasthan" />
           <h3>Rajasthan</h3>
           <p>
             Experience the majestic palaces, golden deserts, vibrant folk
@@ -217,10 +185,7 @@
         </div>
 
         <div class="package-card">
-          <img
-            src="Image/upP.jpg"
-            alt="Uttar Pradesh"
-          />
+          <img src="Image/upP.jpg" alt="Uttar Pradesh" />
           <h3>Uttar Pradesh</h3>
           <p>
             Discover the grand monuments, sacred pilgrimage sites, bustling
@@ -230,10 +195,7 @@
         </div>
 
         <div class="package-card">
-          <img
-            src="Image/uttrakhandP.jpg"
-            alt="Uttarakhand"
-          />
+          <img src="Image/uttrakhandP.jpg" alt="Uttarakhand" />
           <h3>Uttarakhand</h3>
           <p>
             Explore the spiritual pilgrimage sites, lush green mountains,
@@ -248,10 +210,7 @@
       <h2>Travel Categories</h2>
       <div class="categories-container">
         <div class="category-card">
-          <img
-            src="Image/advanture.jpg"
-            alt="Adventure"
-          />
+          <img src="Image/advanture.jpg" alt="Adventure" />
           <h3>Adventure</h3>
           <p>
             Feel the thrill, embrace the adrenaline, and explore the unknown.
@@ -260,10 +219,7 @@
           <a href="categories.html"><button>Explore</button></a>
         </div>
         <div class="category-card">
-          <img
-            src="Image/beaches.jpg"
-            alt="Beaches"
-          />
+          <img src="Image/beaches.jpg" alt="Beaches" />
           <h3>Beaches</h3>
           <p>
             Feel the thrill, embrace the adrenaline, and explore the unknown.
@@ -272,10 +228,7 @@
           <a href="Beaches.html"><button>Explore</button></a>
         </div>
         <div class="category-card">
-          <img
-            src="Image/family.jpg"
-            alt="Family"
-          />
+          <img src="Image/family.jpg" alt="Family" />
           <h3>Family</h3>
           <p>
             Feel the thrill, embrace the adrenaline, and explore the unknown.
@@ -284,10 +237,7 @@
           <a href="family.html"><button>Explore</button></a>
         </div>
         <div class="category-card">
-          <img
-            src="Image/honeymoon.jpg"
-            alt="Honeymoon"
-          />
+          <img src="Image/honeymoon.jpg" alt="Honeymoon" />
           <h3>Honeymoon</h3>
           <p>
             Feel the thrill, embrace the adrenaline, and explore the unknown.
@@ -296,10 +246,7 @@
           <a href="honeymoon.html"><button>Explore</button></a>
         </div>
         <div class="category-card">
-          <img
-            src="Image/nature.jpg"
-            alt="Nature"
-          />
+          <img src="Image/nature.jpg" alt="Nature" />
           <h3>Nature</h3>
           <p>
             Feel the thrill, embrace the adrenaline, and explore the unknown.
@@ -308,10 +255,7 @@
           <a href="nature.html"><button>Explore</button></a>
         </div>
         <div class="category-card">
-          <img
-            src="Image/religious.jpg"
-            alt="Religious"
-          />
+          <img src="Image/religious.jpg" alt="Religious" />
           <h3>Religious</h3>
           <p>
             Feel the thrill, embrace the adrenaline, and explore the unknown.
@@ -320,10 +264,7 @@
           <a href="religious.html"><button>Explore</button></a>
         </div>
         <div class="category-card">
-          <img
-            src="Image/weekend.jpg"
-            alt="Weekend"
-          />
+          <img src="Image/weekend.jpg" alt="Weekend" />
           <h3>Weekend</h3>
           <p>
             Feel the thrill, embrace the adrenaline, and explore the unknown.
@@ -332,10 +273,7 @@
           <a href="weekend.html"><button>Explore</button></a>
         </div>
         <div class="category-card">
-          <img
-            src="Image/wildlife.jpg"
-            alt="Wildlife"
-          />
+          <img src="Image/wildlife.jpg" alt="Wildlife" />
           <h3>Wildlife</h3>
           <p>
             Feel the thrill, embrace the adrenaline, and explore the unknown.
@@ -451,6 +389,44 @@
 
           // packages.html pe redirect
           window.location.href = "packages.html";
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const searchInput = document.querySelector("#searchInput"); // apna search input ka id ya class yahan likh
+        const packageCards = document.querySelectorAll(".package-card");
+        const categoryCards = document.querySelectorAll(".category-card");
+        const slider = document.querySelector(".slider"); // <-- slider ka class/id dalna
+
+        searchInput.addEventListener("keyup", () => {
+          const query = searchInput.value.toLowerCase();
+
+          // Agar query likhi gayi hai to slider hide ho jaye
+          if (query.length > 0) {
+            slider.style.display = "none";
+          } else {
+            slider.style.display = "block"; // query khali ho to wapas dikh jaye
+          }
+
+          // Filter package cards
+          packageCards.forEach((card) => {
+            const text = card.innerText.toLowerCase();
+            if (text.includes(query)) {
+              card.style.display = "block"; // ya "flex" agar flexbox use kar raha hai
+            } else {
+              card.style.display = "none";
+            }
+          });
+
+          // Filter category cards
+          categoryCards.forEach((card) => {
+            const text = card.innerText.toLowerCase();
+            if (text.includes(query)) {
+              card.style.display = "block"; // ya "flex"
+            } else {
+              card.style.display = "none";
+            }
+          });
         });
       });
     </script>

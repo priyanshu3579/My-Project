@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Advanture..</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanture..</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
@@ -12,17 +15,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <nav class="navbar">
       <div class="logo">
         <img src="Image/logo.png" alt="Logo" />
         <div class="logo-text">
           <span>Kapish Holidayss</span>
-           <p class="tagline">We are the best</p>
-           </div>
+          <p class="tagline">We are the best</p>
+        </div>
       </div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -42,10 +44,19 @@
         </li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
+
       <div class="search-container">
-        <input type="text" placeholder="Search..." />
-        <button><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+        <input
+          autocomplete="off"
+          type="text"
+          placeholder="Search..."
+          id="searchInput"
+        />
+        <button>
+          <i class="fa-solid fa-magnifying-glass" style="color: #ffffff"></i>
+        </button>
       </div>
+
       <div class="hamburger">
         <span></span>
         <span></span>
@@ -53,108 +64,154 @@
       </div>
     </nav>
 
-<section class="hero" id="advantureBg" >
-  <div class="hero-content">
-    <h1>Adventure Destinations</h1>
-    <p>Thrill, fun and unforgettable journeys await you!</p>
-    <button class="explore-btn">Explore Now</button>
-  </div>
-</section>
+    <section class="hero" id="advantureBg">
+      <div class="hero-content">
+        <h1>Adventure Destinations</h1>
+        <p>Thrill, fun and unforgettable journeys await you!</p>
+        <button class="explore-btn">Explore Now</button>
+      </div>
+    </section>
 
-<section class="main-content">
-  <h2>Top Adventure Destinations</h2><br>
-  <p>Here will be the list of destinations...</p>
+    <section class="main-content">
+      <h2>Top Adventure Destinations</h2>
+      <br />
+      <p>Here will be the list of destinations...</p>
 
-  <!-- Andaman Islands -->
-  <div class="destination-card-horizontal" data-direction="left">
-    <img src="Image/andmanadvanture.jpg" alt="Andaman Islands">
-    <div class="card-content-horizontal">
-      <h3>Andaman Islands</h3>
-      <p>Pristine beaches and thrilling water sports await you.</p>
-      <p class="pDiscription">Water sports, Scuba, Snorkeling, Ross Island boat rides</p>
-      <button class="explore-btn">Explore Now</button>
-    </div>
-  </div>  
+      <!-- Andaman Islands -->
+      <div class="destination-card-horizontal" data-direction="left">
+        <img src="Image/andmanadvanture.jpg" alt="Andaman Islands" />
+        <div class="card-content-horizontal">
+          <h3>Andaman Islands</h3>
+          <p>Pristine beaches and thrilling water sports await you.</p>
+          <p class="pDiscription">
+            Water sports, Scuba, Snorkeling, Ross Island boat rides
+          </p>
+          <button class="explore-btn">Explore Now</button>
+        </div>
+      </div>
 
-  <div class="itinerary-box">
-    <h3>Andaman (Water sports, scuba diving, snorkeling, Ross Island boat rides)</h3>
-    <p><strong>Duration:</strong> 4N / 5D</p>
-    <p><strong>Day 1:</strong> Arrival at Port Blair → Check-in → Evening at Corbyn’s Cove Beach → Light & Sound Show at Cellular Jail → Overnight at Port Blair.</p>
-    <p><strong>Day 2:</strong> Excursion to Ross Island & North Bay → Enjoy boat rides, snorkeling, and coral views → Return to Port Blair.</p>
-    <p><strong>Day 3:</strong> Ferry to Havelock Island → Visit Radhanagar Beach → Overnight stay at Havelock.</p>
-    <p><strong>Day 4:</strong> Optional water sports at Elephant Beach → Later transfer to Neil Island → Overnight stay.</p>
-    <p><strong>Day 5:</strong> Return to Port Blair → Shopping at local markets → Airport drop.</p>
-    <button class="back-btn">Back</button>
-    <button class="query-btn">Query on WhatsaApp</button>
-
-  </div>
-
-  <!-- Gulmarg -->
-  <div class="destination-card-horizontal" data-direction="left">
-    <img src="Image/Gulmargadbanture.jpg" alt="Gulmarg">
-    <div class="card-content-horizontal">
-      <h3>Gulmarg</h3>
-      <p>Skiing, snow adventures and breathtaking landscapes.</p>
-      <p class="pDiscription">Gondola ride, skiing, snow adventure</p>
-      <button class="explore-btn">Explore Now</button>
-    </div>
-  </div>  
-
-  <div class="itinerary-box">
-    <h3>Gulmarg (Gondola ride, skiing, snow adventure)</h3>
-    <p><strong>Duration:</strong> 2N / 3D</p>
-    <p><strong>Day 1:</strong> Arrival in Srinagar → Drive to Gulmarg → Evening walk in meadows → Overnight stay in hotel.</p>
-    <p><strong>Day 2:</strong> Enjoy Gondola Ride (Phase 1 & Phase 2) → Skiing / Snowboarding activities → Visit Maharani Temple & St. Mary’s Church → Overnight in Gulmarg.</p>
-    <p><strong>Day 3:</strong> Leisure time → Return to Srinagar for onward journey.</p>
-    <button class="back-btn">Back</button>
+      <div class="itinerary-box">
+        <h3>
+          Andaman (Water sports, scuba diving, snorkeling, Ross Island boat
+          rides)
+        </h3>
+        <p><strong>Duration:</strong> 4N / 5D</p>
+        <p>
+          <strong>Day 1:</strong> Arrival at Port Blair → Check-in → Evening at
+          Corbyn’s Cove Beach → Light & Sound Show at Cellular Jail → Overnight
+          at Port Blair.
+        </p>
+        <p>
+          <strong>Day 2:</strong> Excursion to Ross Island & North Bay → Enjoy
+          boat rides, snorkeling, and coral views → Return to Port Blair.
+        </p>
+        <p>
+          <strong>Day 3:</strong> Ferry to Havelock Island → Visit Radhanagar
+          Beach → Overnight stay at Havelock.
+        </p>
+        <p>
+          <strong>Day 4:</strong> Optional water sports at Elephant Beach →
+          Later transfer to Neil Island → Overnight stay.
+        </p>
+        <p>
+          <strong>Day 5:</strong> Return to Port Blair → Shopping at local
+          markets → Airport drop.
+        </p>
+        <button class="back-btn">Back</button>
         <button class="query-btn">Query on WhatsaApp</button>
+      </div>
 
-  </div>
+      <!-- Gulmarg -->
+      <div class="destination-card-horizontal" data-direction="left">
+        <img src="Image/Gulmargadbanture.jpg" alt="Gulmarg" />
+        <div class="card-content-horizontal">
+          <h3>Gulmarg</h3>
+          <p>Skiing, snow adventures and breathtaking landscapes.</p>
+          <p class="pDiscription">Gondola ride, skiing, snow adventure</p>
+          <button class="explore-btn">Explore Now</button>
+        </div>
+      </div>
 
-  <!-- Pahalgam -->
-  <div class="destination-card-horizontal" data-direction="left">
-    <img src="Image/Pahalgamadvanture.jpg" alt="Pahalgam">
-    <div class="card-content-horizontal">
-      <h3>Pahalgam</h3>
-      <p>Nature trails, river rafting, and serene valleys.</p>
-      <p class="pDiscription">Aru Valley, Betaab Valley trekking, river rafting</p>
-      <button class="explore-btn">Explore Now</button>
-    </div>
-  </div>  
-
-  <div class="itinerary-box">
-    <h3>Pahalgam (Aru Valley, Betaab Valley trekking, river rafting)</h3>
-    <p><strong>Duration:</strong> 2N / 3D</p>
-    <p><strong>Day 1:</strong> Arrive in Srinagar → Transfer to Pahalgam → Check-in → Evening walk along Lidder River → Overnight stay.</p>
-    <p><strong>Day 2:</strong> Day trip to Aru Valley & Betaab Valley (trekking, scenic views) → Optional river rafting in Lidder River → Overnight stay in Pahalgam.</p>
-    <p><strong>Day 3:</strong> Explore local saffron fields & markets → Return to Srinagar.</p>
-    <button class="back-btn">Back</button>
+      <div class="itinerary-box">
+        <h3>Gulmarg (Gondola ride, skiing, snow adventure)</h3>
+        <p><strong>Duration:</strong> 2N / 3D</p>
+        <p>
+          <strong>Day 1:</strong> Arrival in Srinagar → Drive to Gulmarg →
+          Evening walk in meadows → Overnight stay in hotel.
+        </p>
+        <p>
+          <strong>Day 2:</strong> Enjoy Gondola Ride (Phase 1 & Phase 2) →
+          Skiing / Snowboarding activities → Visit Maharani Temple & St. Mary’s
+          Church → Overnight in Gulmarg.
+        </p>
+        <p>
+          <strong>Day 3:</strong> Leisure time → Return to Srinagar for onward
+          journey.
+        </p>
+        <button class="back-btn">Back</button>
         <button class="query-btn">Query on WhatsaApp</button>
+      </div>
 
-  </div>
+      <!-- Pahalgam -->
+      <div class="destination-card-horizontal" data-direction="left">
+        <img src="Image/Pahalgamadvanture.jpg" alt="Pahalgam" />
+        <div class="card-content-horizontal">
+          <h3>Pahalgam</h3>
+          <p>Nature trails, river rafting, and serene valleys.</p>
+          <p class="pDiscription">
+            Aru Valley, Betaab Valley trekking, river rafting
+          </p>
+          <button class="explore-btn">Explore Now</button>
+        </div>
+      </div>
 
-  <!-- Sonmarg -->
-  <div class="destination-card-horizontal" data-direction="left">
-    <img src="Image/Sonmargadvanture.jpg" alt="Sonmarg">
-    <div class="card-content-horizontal">
-      <h3>Sonmarg</h3>
-      <p>Snow-capped mountains and adventurous treks.</p>
-      <p class="pDiscription">Thajiwas Glacier trek, snow activities</p>
-      <button class="explore-btn">Explore Now</button>
-    </div>
-  </div>  
-
-  <div class="itinerary-box">
-    <h3>Sonmarg (Thajiwas Glacier trek, snow activities)</h3>
-    <p><strong>Duration:</strong> 1N / 2D</p>
-    <p><strong>Day 1:</strong> Drive from Srinagar to Sonmarg (approx 80 km) → Local sightseeing (river valley views, fishing spots) → Pony ride to Thajiwas Glacier → Snow fun activities → Overnight stay in Sonmarg.</p>
-    <p><strong>Day 2:</strong> Morning leisure walk by Sindh River → Local market visit → Return to Srinagar.</p>
-    <button class="back-btn">Back</button>
+      <div class="itinerary-box">
+        <h3>Pahalgam (Aru Valley, Betaab Valley trekking, river rafting)</h3>
+        <p><strong>Duration:</strong> 2N / 3D</p>
+        <p>
+          <strong>Day 1:</strong> Arrive in Srinagar → Transfer to Pahalgam →
+          Check-in → Evening walk along Lidder River → Overnight stay.
+        </p>
+        <p>
+          <strong>Day 2:</strong> Day trip to Aru Valley & Betaab Valley
+          (trekking, scenic views) → Optional river rafting in Lidder River →
+          Overnight stay in Pahalgam.
+        </p>
+        <p>
+          <strong>Day 3:</strong> Explore local saffron fields & markets →
+          Return to Srinagar.
+        </p>
+        <button class="back-btn">Back</button>
         <button class="query-btn">Query on WhatsaApp</button>
+      </div>
 
-  </div>
+      <!-- Sonmarg -->
+      <div class="destination-card-horizontal" data-direction="left">
+        <img src="Image/Sonmargadvanture.jpg" alt="Sonmarg" />
+        <div class="card-content-horizontal">
+          <h3>Sonmarg</h3>
+          <p>Snow-capped mountains and adventurous treks.</p>
+          <p class="pDiscription">Thajiwas Glacier trek, snow activities</p>
+          <button class="explore-btn">Explore Now</button>
+        </div>
+      </div>
 
-</section>
+      <div class="itinerary-box">
+        <h3>Sonmarg (Thajiwas Glacier trek, snow activities)</h3>
+        <p><strong>Duration:</strong> 1N / 2D</p>
+        <p>
+          <strong>Day 1:</strong> Drive from Srinagar to Sonmarg (approx 80 km)
+          → Local sightseeing (river valley views, fishing spots) → Pony ride to
+          Thajiwas Glacier → Snow fun activities → Overnight stay in Sonmarg.
+        </p>
+        <p>
+          <strong>Day 2:</strong> Morning leisure walk by Sindh River → Local
+          market visit → Return to Srinagar.
+        </p>
+        <button class="back-btn">Back</button>
+        <button class="query-btn">Query on WhatsaApp</button>
+      </div>
+    </section>
 
     <footer>
       <div class="footer-container">
@@ -200,11 +257,46 @@
       </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="categories.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const searchInput = document.querySelector("#searchInput"); // apna search input ka id ya class yahan likh
+        const packageCards = document.querySelectorAll(".package-card");
+        const categoryCards = document.querySelectorAll(".category-card");
+        const slider = document.querySelector(".slider"); // <-- slider ka class/id dalna
 
+        searchInput.addEventListener("keyup", () => {
+          const query = searchInput.value.toLowerCase();
 
+          // Agar query likhi gayi hai to slider hide ho jaye
+          if (query.length > 0) {
+            slider.style.display = "none";
+          } else {
+            slider.style.display = "block"; // query khali ho to wapas dikh jaye
+          }
 
+          // Filter package cards
+          packageCards.forEach((card) => {
+            const text = card.innerText.toLowerCase();
+            if (text.includes(query)) {
+              card.style.display = "block"; // ya "flex" agar flexbox use kar raha hai
+            } else {
+              card.style.display = "none";
+            }
+          });
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
-<script src="categories.js"></script>
-</body>
+          // Filter category cards
+          categoryCards.forEach((card) => {
+            const text = card.innerText.toLowerCase();
+            if (text.includes(query)) {
+              card.style.display = "block"; // ya "flex"
+            } else {
+              card.style.display = "none";
+            }
+          });
+        });
+      });
+    </script>
+  </body>
 </html>

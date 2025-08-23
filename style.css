@@ -122,7 +122,8 @@ html {
     border: none;
     padding: 8px 12px;
     outline: none;
-    width: 180px;
+
+    min-width: 180px; 
     border-radius: 50px 0 0 50px; /* left side round */
 }
 
@@ -158,7 +159,7 @@ html {
 
 /* Responsive */
 @media (max-width: 900px) {
-    .nav-links, .search-container {
+    .nav-links {
         display: none;
         flex-direction: column;
         background: #fff;
@@ -918,9 +919,49 @@ footer {
 .search-container {
     display: flex;
     align-items: center;
-    border: 2px solid #FF9B00;  /* ek single border rahe */
+    border: 2px solid #FF9B00;
     border-radius: 50px;
     overflow: hidden;
-    position: relative; 
+    position: relative;
+    max-width: 400px;
 }
 
+@media (max-width: 600px) {
+    .search-container {
+        flex-direction: column; /* Stack input and button */
+        max-width: 90%; /* Adjust max width for smaller screens */
+    }
+    .search-container input {
+        border-radius: 50px; /* Full round for smaller screens */
+        margin-bottom: 10px; /* Space between input and button */
+    }
+    .search-container button {
+        width: 100%; /* Full width for button */
+    }
+}
+
+.search-container .search-icon {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #FF9B00;
+}
+
+/* 📱 Mobile: only icon show */
+@media (max-width: 600px) {
+    .search-container input,
+    .search-container .search-btn {
+        display: none; /* hide input and button */
+    }
+
+    .search-container {
+        border: none; /* remove border in mobile */
+        max-width: fit-content;
+    }
+
+    .search-container .search-icon {
+        display: block; /* show only icon */
+    }
+}

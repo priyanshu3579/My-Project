@@ -1,11 +1,13 @@
- 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Family..</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Family..</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
@@ -13,21 +15,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <nav class="navbar">
       <div class="logo">
         <img src="Image/logo.png" alt="Logo" />
-                <div class="logo-text">
-                  <span>Kapish Holidayss</span>
-                  <p class="tagline">We are the best</p>
-                </div>
+        <div class="logo-text">
+          <span>Kapish Holidayss</span>
+          <p class="tagline">We are the best</p>
+        </div>
       </div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-       <li><a href="index.html#tour-packages">Tour Packages</a></li>
+        <li><a href="index.html#tour-packages">Tour Packages</a></li>
         <li class="dropdown">
           <a href="index.html#categories-packages">Categories &#9662;</a>
           <ul class="dropdown-menu">
@@ -42,12 +43,20 @@
           </ul>
         </li>
         <li><a href="contact.html">Contact Us</a></li>
-      
       </ul>
+
       <div class="search-container">
-        <input type="text" placeholder="Search..." />
-        <button><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+        <input
+          autocomplete="off"
+          type="text"
+          placeholder="Search..."
+          id="searchInput"
+        />
+        <button>
+          <i class="fa-solid fa-magnifying-glass" style="color: #ffffff"></i>
+        </button>
       </div>
+
       <div class="hamburger">
         <span></span>
         <span></span>
@@ -55,88 +64,236 @@
       </div>
     </nav>
 
-<section class="hero" id="familyBg">
-  <div class="hero-content">
-    <h1>Fun for the Whole Family</h1>
-    <p>Safe, enjoyable, and activity-packed trips designed for every age group to create unforgettable family memories.</p>
-    <button class="explore-btn">Explore Now</button>
-  </div>
-</section>
+    <section class="hero" id="familyBg">
+      <div class="hero-content">
+        <h1>Fun for the Whole Family</h1>
+        <p>
+          Safe, enjoyable, and activity-packed trips designed for every age
+          group to create unforgettable family memories.
+        </p>
+        <button class="explore-btn">Explore Now</button>
+      </div>
+    </section>
 
-<section class="main-content">
-  <h2>Top families Destinations</h2><br>
-  <p>Here will be the list of destinations...</p>
+    <section class="main-content">
+      <h2>Top families Destinations</h2>
+      <br />
+      <p>Here will be the list of destinations...</p>
 
-  <div class="destination-card-horizontal" data-direction="left">
-  <img src="Image/Srinagarfamily.jpg" alt="Srinagar">
-  <div class="card-content-horizontal">
-    <h3>Srinagar</h3>
-    <p>take shikara rides on Dal Lake, stroll through Mughal gardens, and enjoy snow fun in Gulmarg." ,sdesc: "Shikara Ride, Mughal Gardens, Dal Lake</p>
-    <p class="pDiscription"></p>
-    <button class="explore-btn">Explore Now</button>
-  </div>
-</div>  
-
-<div class="itinerary-box" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <h3>Andaman (Water sports, scuba diving, snorkeling, Ross Island boat rides)</h3><p><strong>Duration:</strong> 4N / 5D</p><p><strong>Day 1:</strong> Arrival at Port Blair → Check-in → Evening at Corbyn’s Cove Beach → Light &amp; Sound Show at Cellular Jail → Overnight at Port Blair.</p><p><strong>Day 2:</strong> Excursion to Ross Island &amp; North Bay → Enjoy boat rides, snorkeling, and coral views → Return to Port Blair.</p><p><strong>Day 3:</strong> Ferry to Havelock Island → Visit Radhanagar Beach → Overnight stay at Havelock.</p><p><strong>Day 4:</strong> Optional water sports at Elephant Beach → Later transfer to Neil Island → Overnight stay.</p><p><strong>Day 5:</strong> Return to Port Blair → Shopping at local markets → Airport drop.</p>
-        <button class="back-btn">Back</button>
-            <button class="query-btn">Query on WhatsaApp</button>
-
+      <div class="destination-card-horizontal" data-direction="left">
+        <img src="Image/Srinagarfamily.jpg" alt="Srinagar" />
+        <div class="card-content-horizontal">
+          <h3>Srinagar</h3>
+          <p>
+            take shikara rides on Dal Lake, stroll through Mughal gardens, and
+            enjoy snow fun in Gulmarg." ,sdesc: "Shikara Ride, Mughal Gardens,
+            Dal Lake
+          </p>
+          <p class="pDiscription"></p>
+          <button class="explore-btn">Explore Now</button>
+        </div>
       </div>
 
-  <div class="destination-card-horizontal" data-direction="left">
-  <img src="Image/Darjeelingfamily.jpg" alt="Darjeeling">
-  <div class="card-content-horizontal">
-    <h3>Darjeeling</h3>
-    <p>Known for its toy train, tea gardens, and sunrise at Tiger Hill – Darjeeling offers something delightful for kids, parents, and grandparents alike.</p>
-    <p class="pDiscription">Toy Train, Tiger Hill sunrise</p>
-    <button class="explore-btn">Explore Now</button>
-  </div>
-</div>  
-
-<div class="itinerary-box" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <h3>Andaman (Water sports, scuba diving, snorkeling, Ross Island boat rides)</h3><p><strong>Duration:</strong> 4N / 5D</p><p><strong>Day 1:</strong> Arrival at Port Blair → Check-in → Evening at Corbyn’s Cove Beach → Light &amp; Sound Show at Cellular Jail → Overnight at Port Blair.</p><p><strong>Day 2:</strong> Excursion to Ross Island &amp; North Bay → Enjoy boat rides, snorkeling, and coral views → Return to Port Blair.</p><p><strong>Day 3:</strong> Ferry to Havelock Island → Visit Radhanagar Beach → Overnight stay at Havelock.</p><p><strong>Day 4:</strong> Optional water sports at Elephant Beach → Later transfer to Neil Island → Overnight stay.</p><p><strong>Day 5:</strong> Return to Port Blair → Shopping at local markets → Airport drop.</p>
+      <div
+        class="itinerary-box"
+        style="
+          translate: none;
+          rotate: none;
+          scale: none;
+          transform: translate(0px, 0px);
+          opacity: 1;
+        "
+      >
+        <h3>
+          Andaman (Water sports, scuba diving, snorkeling, Ross Island boat
+          rides)
+        </h3>
+        <p><strong>Duration:</strong> 4N / 5D</p>
+        <p>
+          <strong>Day 1:</strong> Arrival at Port Blair → Check-in → Evening at
+          Corbyn’s Cove Beach → Light &amp; Sound Show at Cellular Jail →
+          Overnight at Port Blair.
+        </p>
+        <p>
+          <strong>Day 2:</strong> Excursion to Ross Island &amp; North Bay →
+          Enjoy boat rides, snorkeling, and coral views → Return to Port Blair.
+        </p>
+        <p>
+          <strong>Day 3:</strong> Ferry to Havelock Island → Visit Radhanagar
+          Beach → Overnight stay at Havelock.
+        </p>
+        <p>
+          <strong>Day 4:</strong> Optional water sports at Elephant Beach →
+          Later transfer to Neil Island → Overnight stay.
+        </p>
+        <p>
+          <strong>Day 5:</strong> Return to Port Blair → Shopping at local
+          markets → Airport drop.
+        </p>
         <button class="back-btn">Back</button>
-            <button class="query-btn">Query on WhatsaApp</button>
-
+        <button class="query-btn">Query on WhatsaApp</button>
       </div>
 
-  <div class="destination-card-horizontal" data-direction="left">
-  <img src="Image/Gangtokfamily.jpg" alt="Gangtok">
-  <div class="card-content-horizontal">
-     <h3>Gangtok</h3>
-          <p>A safe and serene hill town where families can explore monasteries, enjoy ropeway rides, and experience the thrill of Nathula Pass.</p>
+      <div class="destination-card-horizontal" data-direction="left">
+        <img src="Image/Darjeelingfamily.jpg" alt="Darjeeling" />
+        <div class="card-content-horizontal">
+          <h3>Darjeeling</h3>
+          <p>
+            Known for its toy train, tea gardens, and sunrise at Tiger Hill –
+            Darjeeling offers something delightful for kids, parents, and
+            grandparents alike.
+          </p>
+          <p class="pDiscription">Toy Train, Tiger Hill sunrise</p>
+          <button class="explore-btn">Explore Now</button>
+        </div>
+      </div>
+
+      <div
+        class="itinerary-box"
+        style="
+          translate: none;
+          rotate: none;
+          scale: none;
+          transform: translate(0px, 0px);
+          opacity: 1;
+        "
+      >
+        <h3>
+          Andaman (Water sports, scuba diving, snorkeling, Ross Island boat
+          rides)
+        </h3>
+        <p><strong>Duration:</strong> 4N / 5D</p>
+        <p>
+          <strong>Day 1:</strong> Arrival at Port Blair → Check-in → Evening at
+          Corbyn’s Cove Beach → Light &amp; Sound Show at Cellular Jail →
+          Overnight at Port Blair.
+        </p>
+        <p>
+          <strong>Day 2:</strong> Excursion to Ross Island &amp; North Bay →
+          Enjoy boat rides, snorkeling, and coral views → Return to Port Blair.
+        </p>
+        <p>
+          <strong>Day 3:</strong> Ferry to Havelock Island → Visit Radhanagar
+          Beach → Overnight stay at Havelock.
+        </p>
+        <p>
+          <strong>Day 4:</strong> Optional water sports at Elephant Beach →
+          Later transfer to Neil Island → Overnight stay.
+        </p>
+        <p>
+          <strong>Day 5:</strong> Return to Port Blair → Shopping at local
+          markets → Airport drop.
+        </p>
+        <button class="back-btn">Back</button>
+        <button class="query-btn">Query on WhatsaApp</button>
+      </div>
+
+      <div class="destination-card-horizontal" data-direction="left">
+        <img src="Image/Gangtokfamily.jpg" alt="Gangtok" />
+        <div class="card-content-horizontal">
+          <h3>Gangtok</h3>
+          <p>
+            A safe and serene hill town where families can explore monasteries,
+            enjoy ropeway rides, and experience the thrill of Nathula Pass.
+          </p>
           <p class="pDiscription">Changu Lake, Baba Mandir</p>
-    <button class="explore-btn">Explore Now</button>
-  </div>
-</div>  
-
-<div class="itinerary-box" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <h3>Andaman (Water sports, scuba diving, snorkeling, Ross Island boat rides)</h3><p><strong>Duration:</strong> 4N / 5D</p><p><strong>Day 1:</strong> Arrival at Port Blair → Check-in → Evening at Corbyn’s Cove Beach → Light &amp; Sound Show at Cellular Jail → Overnight at Port Blair.</p><p><strong>Day 2:</strong> Excursion to Ross Island &amp; North Bay → Enjoy boat rides, snorkeling, and coral views → Return to Port Blair.</p><p><strong>Day 3:</strong> Ferry to Havelock Island → Visit Radhanagar Beach → Overnight stay at Havelock.</p><p><strong>Day 4:</strong> Optional water sports at Elephant Beach → Later transfer to Neil Island → Overnight stay.</p><p><strong>Day 5:</strong> Return to Port Blair → Shopping at local markets → Airport drop.</p>
-        <button class="back-btn">Back</button>
-            <button class="query-btn">Query on WhatsaApp</button>
-
+          <button class="explore-btn">Explore Now</button>
+        </div>
       </div>
 
-  <div class="destination-card-horizontal" data-direction="left">
-  <img src="Image/Kerala.jpg" alt="Kerala">
-  <div class="card-content-horizontal">
-    <h3>Kerala</h3>
-          <p>enjoy peaceful backwater houseboat rides, lush tea gardens, and calm lagoons that everyone can cherish together.</p>
-            <p class="pDiscription">Houseboat stay in Alleppey/Kumarakom</p>
-    <button class="explore-btn">Explore Now</button>
-  </div>
-</div>  
-
-<div class="itinerary-box" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-        <h3>Andaman (Water sports, scuba diving, snorkeling, Ross Island boat rides)</h3><p><strong>Duration:</strong> 4N / 5D</p><p><strong>Day 1:</strong> Arrival at Port Blair → Check-in → Evening at Corbyn’s Cove Beach → Light &amp; Sound Show at Cellular Jail → Overnight at Port Blair.</p><p><strong>Day 2:</strong> Excursion to Ross Island &amp; North Bay → Enjoy boat rides, snorkeling, and coral views → Return to Port Blair.</p><p><strong>Day 3:</strong> Ferry to Havelock Island → Visit Radhanagar Beach → Overnight stay at Havelock.</p><p><strong>Day 4:</strong> Optional water sports at Elephant Beach → Later transfer to Neil Island → Overnight stay.</p><p><strong>Day 5:</strong> Return to Port Blair → Shopping at local markets → Airport drop.</p>
+      <div
+        class="itinerary-box"
+        style="
+          translate: none;
+          rotate: none;
+          scale: none;
+          transform: translate(0px, 0px);
+          opacity: 1;
+        "
+      >
+        <h3>
+          Andaman (Water sports, scuba diving, snorkeling, Ross Island boat
+          rides)
+        </h3>
+        <p><strong>Duration:</strong> 4N / 5D</p>
+        <p>
+          <strong>Day 1:</strong> Arrival at Port Blair → Check-in → Evening at
+          Corbyn’s Cove Beach → Light &amp; Sound Show at Cellular Jail →
+          Overnight at Port Blair.
+        </p>
+        <p>
+          <strong>Day 2:</strong> Excursion to Ross Island &amp; North Bay →
+          Enjoy boat rides, snorkeling, and coral views → Return to Port Blair.
+        </p>
+        <p>
+          <strong>Day 3:</strong> Ferry to Havelock Island → Visit Radhanagar
+          Beach → Overnight stay at Havelock.
+        </p>
+        <p>
+          <strong>Day 4:</strong> Optional water sports at Elephant Beach →
+          Later transfer to Neil Island → Overnight stay.
+        </p>
+        <p>
+          <strong>Day 5:</strong> Return to Port Blair → Shopping at local
+          markets → Airport drop.
+        </p>
         <button class="back-btn">Back</button>
-          <button class="query-btn">Query on WhatsaApp</button>
-
+        <button class="query-btn">Query on WhatsaApp</button>
       </div>
 
-</section>
+      <div class="destination-card-horizontal" data-direction="left">
+        <img src="Image/Kerala.jpg" alt="Kerala" />
+        <div class="card-content-horizontal">
+          <h3>Kerala</h3>
+          <p>
+            enjoy peaceful backwater houseboat rides, lush tea gardens, and calm
+            lagoons that everyone can cherish together.
+          </p>
+          <p class="pDiscription">Houseboat stay in Alleppey/Kumarakom</p>
+          <button class="explore-btn">Explore Now</button>
+        </div>
+      </div>
 
+      <div
+        class="itinerary-box"
+        style="
+          translate: none;
+          rotate: none;
+          scale: none;
+          transform: translate(0px, 0px);
+          opacity: 1;
+        "
+      >
+        <h3>
+          Andaman (Water sports, scuba diving, snorkeling, Ross Island boat
+          rides)
+        </h3>
+        <p><strong>Duration:</strong> 4N / 5D</p>
+        <p>
+          <strong>Day 1:</strong> Arrival at Port Blair → Check-in → Evening at
+          Corbyn’s Cove Beach → Light &amp; Sound Show at Cellular Jail →
+          Overnight at Port Blair.
+        </p>
+        <p>
+          <strong>Day 2:</strong> Excursion to Ross Island &amp; North Bay →
+          Enjoy boat rides, snorkeling, and coral views → Return to Port Blair.
+        </p>
+        <p>
+          <strong>Day 3:</strong> Ferry to Havelock Island → Visit Radhanagar
+          Beach → Overnight stay at Havelock.
+        </p>
+        <p>
+          <strong>Day 4:</strong> Optional water sports at Elephant Beach →
+          Later transfer to Neil Island → Overnight stay.
+        </p>
+        <p>
+          <strong>Day 5:</strong> Return to Port Blair → Shopping at local
+          markets → Airport drop.
+        </p>
+        <button class="back-btn">Back</button>
+        <button class="query-btn">Query on WhatsaApp</button>
+      </div>
+    </section>
 
     <footer>
       <div class="footer-container">
@@ -182,10 +339,46 @@
       </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="categories.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const searchInput = document.querySelector("#searchInput"); // apna search input ka id ya class yahan likh
+        const packageCards = document.querySelectorAll(".package-card");
+        const categoryCards = document.querySelectorAll(".category-card");
+        const slider = document.querySelector(".slider"); // <-- slider ka class/id dalna
 
+        searchInput.addEventListener("keyup", () => {
+          const query = searchInput.value.toLowerCase();
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
-<script src="categories.js"></script>
+          // Agar query likhi gayi hai to slider hide ho jaye
+          if (query.length > 0) {
+            slider.style.display = "none";
+          } else {
+            slider.style.display = "block"; // query khali ho to wapas dikh jaye
+          }
 
-</body>
+          // Filter package cards
+          packageCards.forEach((card) => {
+            const text = card.innerText.toLowerCase();
+            if (text.includes(query)) {
+              card.style.display = "block"; // ya "flex" agar flexbox use kar raha hai
+            } else {
+              card.style.display = "none";
+            }
+          });
+
+          // Filter category cards
+          categoryCards.forEach((card) => {
+            const text = card.innerText.toLowerCase();
+            if (text.includes(query)) {
+              card.style.display = "block"; // ya "flex"
+            } else {
+              card.style.display = "none";
+            }
+          });
+        });
+      });
+    </script>
+  </body>
 </html>

@@ -1,4 +1,11 @@
-
+// ===== Debounce Function =====
+function debounce(func, delay) {
+    let timeout;
+    return function(...args) {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(this, args), delay);
+    };
+}
 
 // ===== Hamburger toggle =====
 const hamburger = document.querySelector('.hamburger');
@@ -22,24 +29,26 @@ const totalSlides = slides.length;
 slides.forEach((_, i) => {
     const dot = document.createElement('div');
     dot.classList.add('dot');
-    if(i === 0) dot.classList.add('active');
+    if (i === 0) dot.classList.add('active');
     dot.addEventListener('click', () => {
         currentIndex = i;
         showSlide(currentIndex);
     });
     dotsContainer.appendChild(dot);
 });
-// slider....
+
+// Show slide function
 function showSlide(index) {
     slides.forEach((slide, i) => {
         slide.classList.remove('active');
-        if(i === index) slide.classList.add('active');
+        if (i === index) slide.classList.add('active');
     });
     const dots = document.querySelectorAll('.dot');
     dots.forEach(dot => dot.classList.remove('active'));
     dots[index].classList.add('active');
 }
 
+// Navigation buttons
 prevBtn.addEventListener('click', () => {
     currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
     showSlide(currentIndex);
@@ -50,6 +59,7 @@ nextBtn.addEventListener('click', () => {
     showSlide(currentIndex);
 });
 
+// Automatic slide change
 setInterval(() => {
     currentIndex = (currentIndex + 1) % totalSlides;
     showSlide(currentIndex);
@@ -57,9 +67,8 @@ setInterval(() => {
 
 showSlide(currentIndex);
 
-
 // ===== ScrollTrigger helper function =====
-const animateOnScroll = (selector, trigger, yOffset=50, duration=0.8) => {
+const animateOnScroll = (selector, trigger, yOffset = 50, duration = 0.8) => {
     gsap.utils.toArray(selector).forEach(el => {
         gsap.from(el, {
             scrollTrigger: {
@@ -75,7 +84,6 @@ const animateOnScroll = (selector, trigger, yOffset=50, duration=0.8) => {
     });
 };
 
-
 // ===== Scroll animations =====
 animateOnScroll(".tour-packages h2", ".tour-packages");
 animateOnScroll(".package-card", ".package-card");
@@ -85,13 +93,11 @@ animateOnScroll(".why-choose h2", ".why-choose h2");
 animateOnScroll(".why-card", ".why-card");
 animateOnScroll("footer .footer-section", "footer .footer-section");
 
-
 // ===== Scroll to Top Button =====
 const scrollTopBtn = document.getElementById("scrollTopBtn");
 
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 300) scrollTopBtn.style.display = "block";
-    else scrollTopBtn.style.display = "none";
+    scrollTopBtn.style.display = window.scrollY > 300 ? "block" : "none";
 });
 
 scrollTopBtn.addEventListener("click", () => {
@@ -103,11 +109,11 @@ function startNavbarAnimation() {
     const tl = gsap.timeline({ defaults: { ease: "power2.out" } });
 
     tl.from(".navbar", { duration: 0.5, y: -100, opacity: 0 })
-      .from(".logo img", { duration: 1, rotation: 360 })
+      .from(".logo img", { duration: 0.8, rotation: 360 })
       .from(".logo span", { duration: 0.5, opacity: 0, x: -20 }, "-=0.5")
-      .from(".nav-links li", { duration: 0.4, opacity: 0, y: -20, stagger: 0.2 }, "-=0.3")
+      .from(".nav-links li", { duration: 0.4, opacity: 0, y: -20, stagger: 0.1 }, "-=0.3")
       .from(".search-container", { duration: 0.5, opacity: 0, x: 20 })
-      .from(".slider-container", { duration: 1, opacity: 0, y: 50 });
+      .from(".slider-container", { duration: 0.8, opacity: 0, y: 50 });
 }
 
 // ===== Call navbar animation on page load =====
@@ -115,16 +121,11 @@ document.addEventListener("DOMContentLoaded", () => {
     startNavbarAnimation();
 });
 
-
-
-
-
 // Detect current page
 const currentPage = window.location.pathname.split("/").pop();
 
 // ===== INDEX.HTML LOGIC =====
-if(currentPage === "index.html" || currentPage === ""){
-    // Hamburger toggle, slider, scroll animations
+if (currentPage === "index.html" || currentPage === "") {
     // Category card click -> store category
     document.querySelectorAll(".category-card button").forEach(btn => {
         btn.addEventListener("click", (e) => {
@@ -136,7 +137,7 @@ if(currentPage === "index.html" || currentPage === ""){
 }
 
 // ===== CATEGORIES.HTML LOGIC =====
-if(currentPage === "categories.html"){
+if (currentPage === "categories.html") {
     const places = [
         { name: "Andaman Islands", category: "Adventure", img: "Image/neil island ( andaman).jpg", desc: "Discover pristine beaches and water sports." },
         { name: "Goa", category: "Beaches", img: "Image/goa.jpg", desc: "Relax on golden beaches and enjoy nightlife." },
@@ -163,3 +164,10 @@ if(currentPage === "categories.html"){
     });
 }
 
+document.getElementById("searchToggle").addEventListener("click", function () {
+  const input = document.getElementById("searchInput");
+  input.classList.toggle("active");
+  if (input.classList.contains("active")) {
+    input.focus();
+  }
+});

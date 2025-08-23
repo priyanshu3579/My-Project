@@ -1,11 +1,13 @@
- 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Honeymoon..</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Honeymoon..</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
@@ -13,17 +15,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <nav class="navbar">
       <div class="logo">
         <img src="Image/logo.png" alt="Logo" />
-                <div class="logo-text">
-                  <span>Kapish Holidayss</span>
-                  <p class="tagline">We are the best</p>
-                </div>
+        <div class="logo-text">
+          <span>Kapish Holidayss</span>
+          <p class="tagline">We are the best</p>
+        </div>
       </div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -42,12 +43,20 @@
           </ul>
         </li>
         <li><a href="contact.html">Contact Us</a></li>
-
       </ul>
+
       <div class="search-container">
-        <input type="text" placeholder="Search..." />
-        <button><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+        <input
+          autocomplete="off"
+          type="text"
+          placeholder="Search..."
+          id="searchInput"
+        />
+        <button>
+          <i class="fa-solid fa-magnifying-glass" style="color: #ffffff"></i>
+        </button>
       </div>
+
       <div class="hamburger">
         <span></span>
         <span></span>
@@ -55,90 +64,137 @@
       </div>
     </nav>
 
-<section class="hero" id="honeymoonBg">
-  <div class="hero-content">
-    <h1>Romantic Escapes</h1>
-    <p>Dreamy destinations filled with privacy, charm, and breathtaking views to celebrate love in the perfect setting.</p>
-    <button class="explore-btn">Explore Now</button>
-  </div>
-</section>
+    <section class="hero" id="honeymoonBg">
+      <div class="hero-content">
+        <h1>Romantic Escapes</h1>
+        <p>
+          Dreamy destinations filled with privacy, charm, and breathtaking views
+          to celebrate love in the perfect setting.
+        </p>
+        <button class="explore-btn">Explore Now</button>
+      </div>
+    </section>
 
-<section class="main-content">
-  <h2>Top Honeymoon Destinations</h2><br>
-  <p>Here will be the list of destinations...</p>
+    <section class="main-content">
+      <h2>Top Honeymoon Destinations</h2>
+      <br />
+      <p>Here will be the list of destinations...</p>
 
-  <!-- Andaman -->
-  <div class="destination-card-horizontal" data-direction="left">
-    <img src="Image/andmancouple.jpg" alt="Andaman Islands">
-    <div class="card-content-horizontal">
-      <h3>Andaman Islands</h3>
-      <p>Turquoise waters, secluded beaches, candlelight dinners by the sea – Andaman is a dreamy escape for couples to begin their forever.</p>
-      <p class="pDiscription">Private beaches, Neil Island, Havelock candlelight dinner vibes</p>
-      <button class="explore-btn">Explore Now</button>
-    </div>
-  </div>  
+      <!-- Andaman -->
+      <div class="destination-card-horizontal" data-direction="left">
+        <img src="Image/andmancouple.jpg" alt="Andaman Islands" />
+        <div class="card-content-horizontal">
+          <h3>Andaman Islands</h3>
+          <p>
+            Turquoise waters, secluded beaches, candlelight dinners by the sea –
+            Andaman is a dreamy escape for couples to begin their forever.
+          </p>
+          <p class="pDiscription">
+            Private beaches, Neil Island, Havelock candlelight dinner vibes
+          </p>
+          <button class="explore-btn">Explore Now</button>
+        </div>
+      </div>
 
-  <div class="itinerary-box">
-    <h3>Private beaches, Neil Island, Havelock candlelight dinner vibes</h3>
-    <p><strong>Duration:</strong> 4N / 5D</p>
-    <p><strong>Day 1:</strong> Arrival at Port Blair → Check-in → Evening leisure → Overnight stay.</p>
-    <p><strong>Day 2:</strong> Havelock Island → Beachside exploration → Overnight stay.</p>
-    <p><strong>Day 3:</strong> Neil Island → Private beach relaxation → Overnight stay.</p>
-    <p><strong>Day 4:</strong> Optional water sports → Evening candlelight dinner → Overnight stay.</p>
-    <p><strong>Day 5:</strong> Departure.</p>
-    <button class="back-btn">Back</button>
+      <div class="itinerary-box">
+        <h3>Private beaches, Neil Island, Havelock candlelight dinner vibes</h3>
+        <p><strong>Duration:</strong> 4N / 5D</p>
+        <p>
+          <strong>Day 1:</strong> Arrival at Port Blair → Check-in → Evening
+          leisure → Overnight stay.
+        </p>
+        <p>
+          <strong>Day 2:</strong> Havelock Island → Beachside exploration →
+          Overnight stay.
+        </p>
+        <p>
+          <strong>Day 3:</strong> Neil Island → Private beach relaxation →
+          Overnight stay.
+        </p>
+        <p>
+          <strong>Day 4:</strong> Optional water sports → Evening candlelight
+          dinner → Overnight stay.
+        </p>
+        <p><strong>Day 5:</strong> Departure.</p>
+        <button class="back-btn">Back</button>
         <button class="query-btn">Query on WhatsaApp</button>
+      </div>
 
-  </div>
+      <!-- Kashmir -->
+      <div class="destination-card-horizontal" data-direction="left">
+        <img src="Image/kashmircouple.jpg" alt="Kashmir" />
+        <div class="card-content-horizontal">
+          <h3>Kashmir</h3>
+          <p>
+            Snowy mountains, shikara rides on Dal Lake, and cozy moments by the
+            valley – Kashmir is nothing less than paradise for a honeymoon.
+          </p>
+          <p class="pDiscription">
+            Shikara Ride on Dal Lake, Pahalgam, Gulmarg snow
+          </p>
+          <button class="explore-btn">Explore Now</button>
+        </div>
+      </div>
 
-  <!-- Kashmir -->
-  <div class="destination-card-horizontal" data-direction="left">
-    <img src="Image/kashmircouple.jpg" alt="Kashmir">
-    <div class="card-content-horizontal">
-      <h3>Kashmir</h3>
-      <p>Snowy mountains, shikara rides on Dal Lake, and cozy moments by the valley – Kashmir is nothing less than paradise for a honeymoon.</p>
-      <p class="pDiscription">Shikara Ride on Dal Lake, Pahalgam, Gulmarg snow</p>
-      <button class="explore-btn">Explore Now</button>
-    </div>
-  </div>  
-
-  <div class="itinerary-box">
-    <h3>Shikara Ride on Dal Lake, Pahalgam, Gulmarg snow</h3>
-    <p><strong>Duration:</strong> 4N / 5D</p>
-    <p><strong>Day 1:</strong> Arrival in Srinagar → Shikara ride → Overnight stay.</p>
-    <p><strong>Day 2:</strong> Transfer to Gulmarg → Gondola ride / snow activities → Overnight stay.</p>
-    <p><strong>Day 3:</strong> Pahalgam day trip → Scenic valleys & river rafting → Overnight stay.</p>
-    <p><strong>Day 4:</strong> Srinagar sightseeing → Mughal Gardens → Overnight stay.</p>
-    <p><strong>Day 5:</strong> Departure.</p>
-    <button class="back-btn">Back</button>
+      <div class="itinerary-box">
+        <h3>Shikara Ride on Dal Lake, Pahalgam, Gulmarg snow</h3>
+        <p><strong>Duration:</strong> 4N / 5D</p>
+        <p>
+          <strong>Day 1:</strong> Arrival in Srinagar → Shikara ride → Overnight
+          stay.
+        </p>
+        <p>
+          <strong>Day 2:</strong> Transfer to Gulmarg → Gondola ride / snow
+          activities → Overnight stay.
+        </p>
+        <p>
+          <strong>Day 3:</strong> Pahalgam day trip → Scenic valleys & river
+          rafting → Overnight stay.
+        </p>
+        <p>
+          <strong>Day 4:</strong> Srinagar sightseeing → Mughal Gardens →
+          Overnight stay.
+        </p>
+        <p><strong>Day 5:</strong> Departure.</p>
+        <button class="back-btn">Back</button>
         <button class="query-btn">Query on WhatsaApp</button>
+      </div>
 
-  </div>
+      <!-- Kerala -->
+      <div class="destination-card-horizontal" data-direction="left">
+        <img src="Image/keralacouple.jpg" alt="Kerala" />
+        <div class="card-content-horizontal">
+          <h3>Kerala</h3>
+          <p>
+            Romantic houseboat cruises, misty hill stations, and golden sunsets
+            on serene beaches – Kerala is truly ‘God’s Own Country’ for
+            lovebirds.
+          </p>
+          <p class="pDiscription">Munnar tea gardens, Alleppey houseboat</p>
+          <button class="explore-btn">Explore Now</button>
+        </div>
+      </div>
 
-  <!-- Kerala -->
-  <div class="destination-card-horizontal" data-direction="left">
-    <img src="Image/keralacouple.jpg" alt="Kerala">
-    <div class="card-content-horizontal">
-      <h3>Kerala</h3>
-      <p>Romantic houseboat cruises, misty hill stations, and golden sunsets on serene beaches – Kerala is truly ‘God’s Own Country’ for lovebirds.</p>
-      <p class="pDiscription">Munnar tea gardens, Alleppey houseboat</p>
-      <button class="explore-btn">Explore Now</button>
-    </div>
-  </div>  
-
-  <div class="itinerary-box">
-    <h3>Munnar tea gardens, Alleppey houseboat</h3>
-    <p><strong>Duration:</strong> 3N / 4D</p>
-    <p><strong>Day 1:</strong> Arrival in Munnar → Check-in → Tea garden walk → Overnight stay.</p>
-    <p><strong>Day 2:</strong> Sightseeing (Eravikulam National Park, Mattupetty Dam) → Overnight stay.</p>
-    <p><strong>Day 3:</strong> Alleppey backwaters → Houseboat stay → Overnight on houseboat.</p>
-    <p><strong>Day 4:</strong> Departure.</p>
-    <button class="back-btn">Back</button>
+      <div class="itinerary-box">
+        <h3>Munnar tea gardens, Alleppey houseboat</h3>
+        <p><strong>Duration:</strong> 3N / 4D</p>
+        <p>
+          <strong>Day 1:</strong> Arrival in Munnar → Check-in → Tea garden walk
+          → Overnight stay.
+        </p>
+        <p>
+          <strong>Day 2:</strong> Sightseeing (Eravikulam National Park,
+          Mattupetty Dam) → Overnight stay.
+        </p>
+        <p>
+          <strong>Day 3:</strong> Alleppey backwaters → Houseboat stay →
+          Overnight on houseboat.
+        </p>
+        <p><strong>Day 4:</strong> Departure.</p>
+        <button class="back-btn">Back</button>
         <button class="query-btn">Query on WhatsaApp</button>
-
-  </div>
-
-</section>
+      </div>
+    </section>
 
     <footer>
       <div class="footer-container">
@@ -184,11 +240,46 @@
       </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="categories.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const searchInput = document.querySelector("#searchInput"); // apna search input ka id ya class yahan likh
+        const packageCards = document.querySelectorAll(".package-card");
+        const categoryCards = document.querySelectorAll(".category-card");
+        const slider = document.querySelector(".slider"); // <-- slider ka class/id dalna
 
+        searchInput.addEventListener("keyup", () => {
+          const query = searchInput.value.toLowerCase();
 
+          // Agar query likhi gayi hai to slider hide ho jaye
+          if (query.length > 0) {
+            slider.style.display = "none";
+          } else {
+            slider.style.display = "block"; // query khali ho to wapas dikh jaye
+          }
 
+          // Filter package cards
+          packageCards.forEach((card) => {
+            const text = card.innerText.toLowerCase();
+            if (text.includes(query)) {
+              card.style.display = "block"; // ya "flex" agar flexbox use kar raha hai
+            } else {
+              card.style.display = "none";
+            }
+          });
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
-<script src="categories.js"></script>
-</body>
+          // Filter category cards
+          categoryCards.forEach((card) => {
+            const text = card.innerText.toLowerCase();
+            if (text.includes(query)) {
+              card.style.display = "block"; // ya "flex"
+            } else {
+              card.style.display = "none";
+            }
+          });
+        });
+      });
+    </script>
+  </body>
 </html>

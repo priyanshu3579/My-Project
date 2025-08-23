@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Packages..</title>
-        <link
+    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-        <link
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
       integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-<link rel="stylesheet" href="packages.css">
-</head>
-<body>
-    
-        <nav class="navbar">    
+    <link rel="stylesheet" href="packages.css" />
+  </head>
+  <body>
+    <nav class="navbar">
       <div class="logo">
         <img src="Image/logo.png" alt="Logo" />
-      <div class="logo-text">
-        <span>Kapish Holidayss</span>
-        <p class="tagline">We are the best</p>
+        <div class="logo-text">
+          <span>Kapish Holidayss</span>
+          <p class="tagline">We are the best</p>
+        </div>
       </div>
-    </div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="index.html#tour-packages">Tour Packages</a></li>
@@ -45,10 +44,19 @@
         </li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
+
       <div class="search-container">
-        <input type="text" placeholder="Search..." />
-        <button><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+        <input
+          autocomplete="off"
+          type="text"
+          placeholder="Search..."
+          id="searchInput"
+        />
+        <button>
+          <i class="fa-solid fa-magnifying-glass" style="color: #ffffff"></i>
+        </button>
       </div>
+
       <div class="hamburger">
         <span></span>
         <span></span>
@@ -56,11 +64,10 @@
       </div>
     </nav>
 
-
-<section class="packages-section">
-  <div class="cards-container"></div> 
-  <div class="data"></div>
-</section>
+    <section class="packages-section">
+      <div class="cards-container"></div>
+      <div class="data"></div>
+    </section>
 
     <footer>
       <div class="footer-container">
@@ -105,9 +112,48 @@
         <p>&copy; 2025 Kapish Holidayss. All Rights Reserved.</p>
       </div>
     </footer>
-
-
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
     <script src="packages.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const searchInput = document.querySelector("#searchInput"); // apna search input ka id ya class yahan likh
+        const packageCards = document.querySelectorAll(".package-card");
+        const categoryCards = document.querySelectorAll(".category-card");
+        const slider = document.querySelector(".slider"); // <-- slider ka class/id dalna
 
-</body>
+        searchInput.addEventListener("keyup", () => {
+          const query = searchInput.value.toLowerCase();
+
+          // Agar query likhi gayi hai to slider hide ho jaye
+          if (query.length > 0) {
+            slider.style.display = "none";
+          } else {
+            slider.style.display = "block"; // query khali ho to wapas dikh jaye
+          }
+
+          // Filter package cards
+          packageCards.forEach((card) => {
+            const text = card.innerText.toLowerCase();
+            if (text.includes(query)) {
+              card.style.display = "block"; // ya "flex" agar flexbox use kar raha hai
+            } else {
+              card.style.display = "none";
+            }
+          });
+
+          // Filter category cards
+          categoryCards.forEach((card) => {
+            const text = card.innerText.toLowerCase();
+            if (text.includes(query)) {
+              card.style.display = "block"; // ya "flex"
+            } else {
+              card.style.display = "none";
+            }
+          });
+        });
+      });
+    </script>
+  </body>
 </html>
