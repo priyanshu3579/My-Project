@@ -82,25 +82,25 @@ const tourPackages = {
     cards: [
       {
         title: "Relaxing Kerala",
-        image: "image/rafting.jpg",
+        image: "image/keralabeach.jpg",
         description:
           "Unwind in God’s Own Country with serene backwaters, lush tea gardens, and peaceful beach sunsets.",
       },
       {
         title: "Simple Kerala",
-        image: "image/flower.jpg",
+        image: "image/kerala.jpg",
         description:
           "Explore Munnar’s misty mountains, Thekkady’s wildlife, and Kovalam’s tranquil beaches for a rejuvenating escape.",
       },
       {
         title: "Kerala + South",
-        image: "image/camping.jpg",
+        image: "image/southkerala.jpg",
         description:
           "Experience the best of South India with Kovalam’s beaches, Rameshwaram’s spiritual sites, and Poovar’s tropical paradise.",
       },
       {
         title: "Exotic South",
-        image: "image/andamanwildlife.jpg",
+        image: "image/Exotickerala.jpg",
         description:
           "Embark on a spiritual journey through Madurai, Rameshwaram, Kanyakumari, and Kodaikanal with iconic temples and scenic landscapes.",
       },
@@ -112,19 +112,19 @@ const tourPackages = {
     cards: [
       {
         title: "Gangtok & Tsomgo Lake",
-        image: "image/rafting.jpg",
+        image: "image/lake.jpg",
         description:
           "Explore Gangtok, Sikkim’s charming capital, with serene Tsomgo Lake, Baba Harbhajan Singh Memorial, and the majestic Nathula Pass.",
       },
       {
         title: "Darjeeling Tea Gardens",
-        image: "image/flower.jpg",
+        image: "image/tea.jpg",
         description:
           "Walk through lush tea gardens, visit the Himalayan Mountaineering Institute, Padmaja Naidu Himalayan Zoo, and enjoy Darjeeling’s colonial charm.",
       },
       {
         title: "Char Dham & Scenic Sikkim",
-        image: "image/camping.jpg",
+        image: "image/sk.jpg",
         description:
           "Experience the spiritual Char Dham tour in Namchi, explore Temi Tea Garden, Samdruptse, and the panoramic beauty of Sikkim’s hills.",
       },
@@ -172,19 +172,19 @@ const tourPackages = {
     cards: [
       {
         title: "Dwarka Somnath Tour",
-        image: "image/gujarat-dwarka-somnath.jpg",
+        image: "image/gujratP.jpg",
         description:
           "Explore the sacred cities of Dwarka and Somnath, visit temples, take holy dips, witness evening aartis, and enjoy the spiritual essence of Gujarat in this 4 nights, 5 days tour.",
       },
       {
         title: "Gujarat Triangle Tour",
-        image: "image/gujarat-triangle.jpg",
+        image: "image/gujrat2.jpeg",
         description:
           "Discover Ahmedabad, Dwarka, and Somnath on this perfect cultural and spiritual journey. Visit heritage sites, temples, coastal attractions, and experience Gujarat’s vibrant traditions.",
       },
       {
         title: "Dwarka Somnath Diu Adventure",
-        image: "image/gujarat-diu-adventure.jpg",
+        image: "image/gujrat3.jpg",
         description:
           "Embark on a 7-night adventure covering Dwarka, Somnath, Sasan Gir, and Diu. Explore temples, beaches, wildlife, and cultural landmarks for a complete Gujarat experience.",
       },
@@ -196,7 +196,7 @@ const tourPackages = {
     cards: [
       {
         title: "Manali Adventure Tour",
-        image: "image/manali-tour.jpg",
+        image: "image/manali.jpg",
         description:
           "Experience the best of Manali in this 5 nights, 6 days tour. Explore Hadimba Temple, Solang Valley, Rohtang Pass, Manikaran, Kasol, Kullu Valley, and indulge in thrilling activities like river rafting, paragliding, skiing, zorbing, and jeep safaris amidst the breathtaking Himalayan landscapes.",
       },
@@ -208,19 +208,19 @@ const tourPackages = {
     cards: [
       {
         title: "Narmada River Heritage Trail",
-        image: "image/rafting.jpg",
+        image: "image/NarmadaRiver.jpg",
         description:
           "Explore the heritage and spiritual charm of Madhya Pradesh along the Narmada River, visiting Maheshwar, Mandu, and Indore in a 3-day itinerary.",
       },
       {
         title: "Tiger Trail - 7 Days Wildlife Safari",
-        image: "image/flower.jpg",
+        image: "image/mp2.jpg",
         description:
           "A thrilling 7-day wildlife adventure through Bandhavgarh, Kanha, and Pench National Parks, ideal for safari enthusiasts and nature lovers.",
       },
       {
         title: "Satpura Delight - 6 Days Wildlife, Heritage & Hills",
-        image: "image/camping.jpg",
+        image: "image/mp3.jpg",
         description:
           "Discover the wilderness, heritage, and hills of Madhya Pradesh on a 6-day journey through Pench, Pachmarhi, and Bhopal.",
       },
@@ -264,37 +264,37 @@ const tourPackages = {
     cards: [
       {
         title: "Rejuvenating Rajasthan Tour",
-        image: "image/rajasthan_rejuvenating.jpg",
+        image: "image/rj.jpg",
         description:
           "Explore Jaipur, Pushkar, Bikaner, Jaisalmer, Jodhpur & Udaipur with palaces, forts, local markets, and cultural experiences over 8 days.",
       },
       {
         title: "Classic Marwar Tour",
-        image: "image/marwar.jpg",
+        image: "image/Jodhpur.jpg",
         description:
           "Discover Jodhpur & Jaisalmer with iconic forts, havelis, lakes, and enjoy a desert camp experience at Sam Dunes.",
       },
       {
-        title: "Rajasthan Wildlife Safari Tour",
-        image: "image/rajasthan_wildlife.jpg",
+        title: "Royal Chittorgarh Fort & History Tour",
+        image: "image/Chittorgarh.jpg",
         description:
           "Witness the royal wildlife of Ranthambhore, boat rides on Udaipur’s lakes, and explore historic forts in Chittorgarh & Bundi.",
       },
       {
         title: "Udaipur Mount Abu Tour",
-        image: "image/udaipur_mountabu.jpg",
+        image: "image/Udaipur.jpg",
         description:
           "Combine the romantic lakes of Udaipur with the serene hill station of Mount Abu, including Jain temples, sunset points, and heritage sightseeing.",
       },
       {
-        title: "Rajasthan Desert Adventure Tour",
-        image: "image/desert_adventure.jpg",
+        title: "Jaisalmer Desert Tour",
+        image: "image/Jaisalmer.jpg",
         description:
           "Adventure through Jaisalmer & Jodhpur with camel safaris, Sam Sand Dunes, forts, havelis, cultural performances, and desert sunsets.",
       },
       {
         title: "Jaipur Full Day Tour",
-        image: "image/jaipur_daytour.jpg",
+        image: "image/Jaipur.jpg",
         description:
           "Explore Jaipur’s top attractions including Amber Fort, City Palace, Hawa Mahal, Birla Temple, Nahargarh Fort, and enjoy traditional Rajasthani experiences.",
       },
@@ -306,25 +306,25 @@ const tourPackages = {
   cards: [
     {
       title: "Prayagraj Heritage Walk",
-      image: "image/prayagraj_heritage.jpg",
+      image: "image/up1.jpg",
       description:
         "Explore the historical city of Prayagraj including Allahabad Fort, Akshaya Vat, Bharadwaj Ashram, Vijay Nagar Hall, Chandra Shekhar Azad Park, and experience the rich cultural and revolutionary heritage of the city.",
     },
     {
       title: "Ayodhya Ram Mandir Darshan",
-      image: "image/ayodhya_rammandir.jpg",
+      image: "image/RamMandir.jpg",
       description:
         "Spiritual journey to Ayodhya including Ram Janmabhoomi (Ram Mandir), Hanuman Garhi, Kanak Bhawan, Guptar Ghat, Nageshwarnath Temple, and participate in the soul-stirring Saryu Aarti.",
     },
     {
       title: "Mathura Vrindavan Agra Pilgrimage",
-      image: "image/mathura_vrindavan.jpg",
+      image: "image/MathuraVrindavan.jpg",
       description:
         "Visit sacred sites of Lord Krishna in Mathura & Vrindavan including Krishna Janmabhoomi, Nidhi Van, Barsana, Govardhan, Dwarka, Yamuna Ghat, Banke Bihari Temple, ISKCON Temple, Prem Mandir, and iconic Agra attractions like Taj Mahal, Agra Fort & Fatehpur Sikri.",
     },
     {
       title: "Kashi Ayodhya Tour Package",
-      image: "image/kashi_ayodhya.jpg",
+      image: "image/Varanasi.jpg",
       description:
         "Experience the divine cities of Varanasi & Ayodhya covering Kashi Vishwanath Temple, Annapurna Temple, Sankat Mochan Hanuman Temple, BHU Vishwanath Temple, Ganga Aarti, Ram Janmabhoomi, Hanuman Garhi, Kanak Bhawan, Guptar Ghat & Valmiki Ashram with comfortable stay and AC transport.",
     },
@@ -336,85 +336,85 @@ Uttarakhand: {
   cards: [
         {
       title: "Haridwar",
-      image: "image/kedarnath.jpg",
+      image: "image/uk1.jpg",
       description:
         "One of India’s holiest cities, where the Ganga Aarti at Har Ki Pauri creates a divine spiritual experience.",
     },
     {
       title: "Mussoorie",
-      image: "image/corbett.jpg",
+      image: "image/uk2.jpg",
       description:
         "The Queen of Hills, offering panoramic Himalayan views, Mall Road charm, waterfalls, and colonial-era vibes.",
     },
     {
       title: "Nainital",
-      image: "image/corbett.jpg",
+      image: "image/uk3.jpg",
       description:
         "The Lake District of India, famous for Naini Lake, snow-capped peaks, cable car rides, and a perfect blend of adventure & serenity.",
     },
     {
       title: "Kedarnath",
-      image: "image/corbett.jpg",
+      image: "image/uk4.jpg",
       description:
         "A sacred Jyotirlinga temple nestled in the Himalayas, surrounded by breathtaking mountains and spiritual energy.",
     },
     {
       title: "Lansdowne",
-      image: "image/haridwar.jpg",
+      image: "image/uk5.jpg",
       description:
         "A peaceful hill station with pine forests, British-era charm, trekking trails, and scenic viewpoints.",
     },
     {
       title: "Do Dham Yatra",
-      image: "image/dodham.jpg",
+      image: "image/uk6.jpg",
       description:
         "A sacred pilgrimage combining the spiritual journey of Kedarnath & Badrinath amidst Himalayan beauty.",
     },
     {
       title: "Auli Skiing & Himalayan Adventure",
-      image: "image/rafting.jpg",
+      image: "image/uk7.jpg",
       description:
         "India’s top skiing destination with snow slopes, cable car rides, and mesmerizing Himalayan views.",
     },
     {
       title: "Chakrata Nature & Adventure Escape",
-      image: "image/flower.jpg",
+      image: "image/uk8.jpg",
       description:
         "An offbeat hill station with caves, waterfalls, lush greenery, and adventurous trekking routes.",
     },
     {
       title: "Binsar Wildlife & Himalayan Retreat",
-      image: "image/camping.jpg",
+      image: "image/uk9.jpg",
       description:
         "A nature lover’s paradise with dense oak forests, Himalayan views, and wildlife spotting",
     },
     {
       title: "Bhimtal Lake & Adventure Escape",
-      image: "image/chopta.jpg",
+      image: "image/uk10.jpg",
       description:
         "A serene alternative to Nainital with a larger lake, boating, kayaking, and adventure activities.",
     },
     {
       title: "Badrinath Pilgrimage & Himalayan Retreat",
-      image: "image/badrinath.jpg",
+      image: "image/uk11.jpg",
       description:
         "One of the Char Dham shrines, nestled between Nar & Narayan peaks with spiritual vibes and natural beauty.",
     },
     {
       title: "Chamoli - Abode of Gods & Nature Trails",
-      image: "image/chamoli.jpg",
+      image: "image/uk12.jpg",
       description:
         "Known as the ‘Abode of Gods’, offering scenic valleys, temples, waterfalls, and trekking adventures.",
     },
     {
       title: "Chopta - Mini Switzerland of India",
-      image: "image/mussoorie.jpg",
+      image: "image/uk13.jpg",
       description:
         "A paradise for trekkers and nature lovers with meadows, snow peaks, and the Tungnath Temple trail.",
     },
     {
       title: "Jim Corbett National Park",
-      image: "image/nainital.jpg",
+      image: "image/uk14.jpg",
       description:
         "India’s first national park, famous for Bengal tigers, thrilling safaris, and rich wildlife diversity.",
     },
@@ -1558,7 +1558,7 @@ const tourDetails = {
     `,
     },
 
-    "Rajasthan Wildlife Safari Tour": {
+    "Royal Chittorgarh Fort & History Tour": {
       overview: `
       <strong>Package Inclusions:</strong><br>
       Accommodation in Udaipur, Ranthambhore<br>
@@ -1609,7 +1609,7 @@ const tourDetails = {
     `,
     },
 
-    "Rajasthan Desert Adventure Tour": {
+    "Jaisalmer Desert Tour": {
       overview: `
       <strong>Package Inclusions:</strong><br>
       Accommodation in Jaisalmer & Jodhpur<br>
