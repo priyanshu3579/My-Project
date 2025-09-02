@@ -363,7 +363,7 @@ html {
     overflow: hidden;
     box-shadow: 0 6px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s, box-shadow 0.3s;
-    padding: 15px;
+    
      gap: 10px; /* element ke beech uniform gap */
 }
 
@@ -384,10 +384,11 @@ html {
 
 
 .category-card p {
-    padding: 0;
+    padding: 0 15px 15px;
     font-size: 0.95rem;
     color: #555;
 }
+
 .category-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
@@ -983,3 +984,10 @@ footer {
         display: block; /* show only icon */
     }
 }
+ 
+.category-card button,
+.package-card button {
+  width: 100%;
+  max-width: 200px;
+}
+
