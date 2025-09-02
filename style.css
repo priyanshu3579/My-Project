@@ -283,7 +283,10 @@ html {
 }
 
 .package-card {
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 420px;   /* cards ki equal height */
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 6px 15px rgba(0,0,0,0.1);
@@ -313,6 +316,8 @@ html {
 }
 
 .package-card button {
+    align-self: center;     /* center me rakhega but apne content ke width par */
+    margin-top: auto;       /* neeche chipkane ke liye */
     margin-bottom: 15px;
     padding: 10px 20px;
     border: none;
@@ -321,7 +326,9 @@ html {
     border-radius: 25px;
     cursor: pointer;
     transition: 0.3s;
+    width: auto;            /* confirm karo ki 100% nahi ho raha */
 }
+
 
 .package-card button:hover {
     background: #e08800;
@@ -348,14 +355,36 @@ html {
 }
 
 .category-card {
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  /* content upar + button neeche */
+    min-height: 420px;               /* sab card ek equal height me */
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 6px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+    padding: 15px;
+     gap: 10px; /* element ke beech uniform gap */
 }
+
+.category-card button {
+    align-self: center;   /* center me rakhega */
+    margin-top: auto;     /* button ko neeche push karega */
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: #FF9B00;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: auto;          /* sirf text ke hisaab se */
+}
+
+
+
 .category-card p {
-    padding: 0 15px 15px;
+    padding: 0;
     font-size: 0.95rem;
     color: #555;
 }
@@ -373,17 +402,6 @@ html {
 .category-card h3 {
     margin: 15px 0 10px;
     color: #FF9B00;
-}
-
-.category-card button {
-    margin-bottom: 15px;
-    padding: 10px 20px;
-    border: none;
-    background: #FF9B00;
-    color: white;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: 0.3s;
 }
 
 .category-card button:hover {
