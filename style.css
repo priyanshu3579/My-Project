@@ -32,11 +32,13 @@ html {
     display: flex;
     align-items: center;
     gap: 10px;
+    
 }
 .logo-text {
     display: flex;
     flex-direction: column; /* span ke niche tagline aayegi */
     line-height: 1.2;
+    
 }
 
 .logo img {
@@ -47,7 +49,7 @@ html {
     font-size: 1.5rem;
     font-weight: 700;
     color: #FF9B00;
-    font-family: "Poppins", sans-serif; 
+    font-family: 'Montserrat', sans-serif;
 }
 
 .logo-text .tagline {
@@ -55,7 +57,7 @@ html {
     font-size: 0.9rem;
     font-weight: 600;
     color: #FF9B00;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .nav-links {
@@ -639,7 +641,7 @@ footer {
 
 .destination-card-horizontal {
   display: flex;
-  align-items: center;
+  align-items: stretch;   /* ✅ dono sides equal height */
   justify-content: space-between;
   width: 100%;
   max-width: 900px;
@@ -648,15 +650,18 @@ footer {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-    min-height: 200px;   /* ✅ ek fixed height */
+  min-height: 200px;
   transition: all 0.3s ease;
 }
 
 .destination-card-horizontal img {
   width: 50%;
-  height: auto;
+  height: 100%;         /* ✅ full height cover kare */
   object-fit: cover;
+  display: block;     /* ✅ image ko squeeze nahi hone dega */
 }
+
+
 
 .card-content-horizontal {
   padding: 20px;
