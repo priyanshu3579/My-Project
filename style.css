@@ -996,3 +996,15 @@ footer {
   max-width: 200px;
 }
 
+#facebook:hover {
+  color: #1877f2; 
+}
+
+#instagram:hover {
+  color: #e1306c; 
+}
+
+
+#whatsapp:hover {
+  color: #25d366;
+}
